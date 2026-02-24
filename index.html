@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Terrain-Safaris</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Tours & Travel" name="keywords">
+    <meta content="Tours & Travel" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.jpg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* Partner Logos */
+        .partner-logos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 40px;
+            padding: 30px 0;
+        }
+        .partner-logos a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 120px;
+            height: 60px;
+            transition: transform 0.3s ease;
+        }
+        .partner-logos a:hover {
+            transform: scale(1.1);
+        }
+        .partner-logos img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        /* ===== PRIMARY COLOR OVERRIDE: rgb(6,150,131) ===== */
+:root {
+    --terrain-primary: rgb(6, 150, 131) !important;
+}
+
+/* Text Primary Color */
+.text-primary,
+.text-primary:hover,
+.text-primary:focus,
+h1.text-primary,
+h2.text-primary,
+h3.text-primary,
+h4.text-primary,
+h5.text-primary,
+h6.text-primary,
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link,
+.dropdown-item.active,
+.dropdown-item:active,
+.dropdown-item:hover,
+.footer-section a:hover,
+.quick-links a:hover,
+.blog-item .text-primary,
+.package-item a:hover,
+.destination-item .destination-overlay h5,
+.service-item i,
+.feature-icon i,
+.testimonial-carousel .owl-dot.active,
+.owl-carousel .owl-nav button:hover,
+.faq-question,
+.faq-question:hover,
+.un-styled-list li:before,
+.section-title,
+.section-title:after,
+.highlight-box,
+.location,
+.sp-header h1,
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active,
+.custom-select:focus,
+.form-control:focus {
+    color: rgb(6, 150, 131) !important;
+}
+
+/* Button Primary Background & Border */
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.disabled,
+.btn-primary:disabled,
+.carousel-control-prev .btn-dark:hover,
+.carousel-control-next .btn-dark:hover,
+.booking-form button[type="submit"],
+#contactForm button[type="submit"],
+.back-to-top,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next,
+.partner-logos a:hover,
+.blog-date,
+.card-header.bg-primary,
+.bg-registration,
+.navbar-light .navbar-toggler-icon {
+    background-color: rgb(6, 150, 131) !important;
+    border-color: rgb(6, 150, 131) !important;
+    color: #ffffff !important;
+}
+
+/* Button Hover Effects */
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.back-to-top:hover,
+.owl-carousel .owl-nav button.owl-prev:hover,
+.owl-carousel .owl-nav button.owl-next:hover {
+    background-color: rgb(186, 222, 42) !important; /* Lime-green hover */
+    border-color: rgb(186, 222, 42) !important;
+    color: #0a1929 !important;
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+/* Outline Buttons */
+.btn-outline-primary,
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+    color: rgb(6, 150, 131) !important;
+    border-color: rgb(6, 150, 131) !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+    background-color: rgb(6, 150, 131) !important;
+    color: #ffffff !important;
+}
+
+/* Feature Icons Background */
+.d-flex .bg-primary,
+.service-item .bg-primary,
+.feature-box .bg-primary {
+    background-color: rgb(6, 150, 131) !important;
+}
+
+/* Border Primary */
+.border-primary,
+.dropdown-menu,
+.package-item .border-top,
+.form-control:focus,
+.custom-select:focus,
+.input-group-append .btn-primary {
+    border-color: rgb(6, 150, 131) !important;
+}
+
+/* Section Title Underline */
+.section-title:after,
+.about-text .text-primary:after,
+.destination-item .destination-overlay:after {
+    background: rgb(6, 150, 131) !important;
+}
+
+/* Navbar Active States */
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .show > .nav-link,
+.dropdown-item.active,
+.dropdown-item:active {
+    color: rgb(6, 150, 131) !important;
+    font-weight: 600;
+}
+
+/* Footer Links Hover */
+footer a:hover,
+.footer-section a:hover,
+.quick-links a:hover,
+.social-links a:hover {
+    color: rgb(6, 150, 131) !important;
+    transform: translateX(3px);
+    transition: all 0.3s ease;
+}
+
+/* List Styling */
+.un-styled-list li:before,
+.testimonial-list li:before,
+.feature-list li:before {
+    color: rgb(6, 150, 131) !important;
+    content: "✓" !important;
+    font-weight: bold;
+}
+
+/* Highlight Boxes */
+.highlight-box,
+.info-box,
+.notice-box {
+    border-left-color: rgb(6, 150, 131) !important;
+    background: rgba(6, 150, 131, 0.08) !important;
+}
+
+/* Form Elements */
+.form-control:focus,
+.custom-select:focus,
+textarea.form-control:focus {
+    border-color: rgb(6, 150, 131) !important;
+    box-shadow: 0 0 0 0.2rem rgba(6, 150, 131, 0.25) !important;
+}
+
+/* Carousel Controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(6, 150, 131, 0.9) !important;
+    border-radius: 50%;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    background-color: rgb(6, 150, 131) !important;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+/* Owl Carousel Dots */
+.owl-carousel .owl-dot span {
+    background: rgba(6, 150, 131, 0.3) !important;
+}
+
+.owl-carousel .owl-dot.active span,
+.owl-carousel .owl-dot:hover span {
+    background: rgb(6, 150, 131) !important;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+
+/* Package & Destination Cards */
+.package-item:hover,
+.destination-item:hover,
+.blog-item:hover,
+.service-item:hover {
+    box-shadow: 0 10px 30px rgba(6, 150, 131, 0.15) !important;
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+.package-item .border-top,
+.destination-item .destination-overlay {
+    border-top-color: rgb(6, 150, 131) !important;
+}
+
+/* Social Icons */
+.btn-outline-primary.btn-square,
+.social-links a {
+    color: rgb(6, 150, 131) !important;
+    border-color: rgb(6, 150, 131) !important;
+}
+
+.btn-outline-primary.btn-square:hover,
+.social-links a:hover {
+    background-color: rgb(6, 150, 131) !important;
+    color: #ffffff !important;
+}
+
+/* Partner Logos Hover */
+.partner-logos a {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.partner-logos a:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+/* Map & iframe Borders */
+.map-box,
+.iframe-container {
+    border: 3px solid rgb(6, 150, 131) !important;
+    border-radius: 8px;
+}
+
+/* Accordion & FAQ */
+.accordion .acc-btn,
+.faq-item .faq-question {
+    color: rgb(6, 150, 131) !important;
+    border-bottom-color: rgba(6, 150, 131, 0.2) !important;
+}
+
+.accordion .acc-btn:hover,
+.faq-item .faq-question:hover {
+    background-color: rgba(6, 150, 131, 0.08) !important;
+}
+
+.accordion .acc-btn .arrow,
+.faq-question .arrow {
+    color: rgb(6, 150, 131) !important;
+}
+
+/* Custom Checkbox & Radio */
+.custom-control-input:checked ~ .custom-control-label::before,
+.custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: rgb(6, 150, 131) !important;
+    border-color: rgb(6, 150, 131) !important;
+}
+
+/* Progress Bars */
+.progress-bar,
+.progress-bar-striped,
+.progress-bar-animated {
+    background-color: rgb(6, 150, 131) !important;
+}
+
+/* Pagination */
+.pagination .page-item.active .page-link,
+.pagination .page-link:hover {
+    background-color: rgb(6, 150, 131) !important;
+    border-color: rgb(6, 150, 131) !important;
+    color: #ffffff !important;
+}
+
+.pagination .page-link {
+    color: rgb(6, 150, 131) !important;
+}
+
+/* Badge & Label */
+.badge-primary,
+.label-primary {
+    background-color: rgb(6, 150, 131) !important;
+    color: #ffffff !important;
+}
+
+/* Alert Primary */
+.alert-primary {
+    background-color: rgba(6, 150, 131, 0.15) !important;
+    border-color: rgb(6, 150, 131) !important;
+    color: rgb(6, 150, 131) !important;
+}
+
+/* Table Primary */
+.table-primary,
+.table-primary > th,
+.table-primary > td {
+    background-color: rgba(6, 150, 131, 0.1) !important;
+    border-color: rgba(6, 150, 131, 0.2) !important;
+}
+
+/* Tooltip & Popover */
+.tooltip-inner,
+.popover {
+    border-color: rgb(6, 150, 131) !important;
+}
+
+.bs-tooltip-top .arrow::before,
+.bs-tooltip-right .arrow::before,
+.bs-tooltip-bottom .arrow::before,
+.bs-tooltip-left .arrow::before {
+    border-top-color: rgb(6, 150, 131) !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .navbar-light .navbar-nav .nav-link {
+        color: rgb(6, 150, 131) !important;
+    }
+
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: rgb(186, 222, 42) !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn-primary,
+    .btn-lg {
+        width: 100%;
+        padding: 0.75rem;
+    }
+
+    .sp-header h1 {
+        font-size: 1.8rem !important;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .btn-primary,
+    .btn-outline-primary {
+        border: 2px solid rgb(6, 150, 131) !important;
+        color: rgb(6, 150, 131) !important;
+        background: none !important;
+    }
+}
+
+/* Dark Mode Support (if implemented later) */
+@media (prefers-color-scheme: dark) {
+    .text-primary {
+        color: rgb(26, 180, 161) !important; /* Lighter teal for dark mode */
+    }
+
+    .btn-primary {
+        background-color: rgb(26, 180, 161) !important;
+        border-color: rgb(26, 180, 161) !important;
+    }
+}
+    </style>
+
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light pt-3 d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center">
+                        <p><i class="fa fa-envelope mr-2"></i>terrainsafarisltd@gmail.com</p>
+                        <p class="text-body px-3">|</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+256 772625961</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-right">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-primary px-3" href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-primary px-3" href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="text-primary px-3" href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="text-primary px-3" href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="text-primary pl-3" href="">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="m-0 text-primary"><span class="text-dark">TERRAIN</span>safaris</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="destination.html" class="nav-item nav-link">Destinations</a>
+                        <a href="package.html" class="nav-item nav-link">Safari Packages</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Services</a>
+                            <div class="dropdown-menu border-0 rounded-0 m-0">
+                                <a href="blog.html" class="dropdown-item">Blog Grid</a>
+                                <a href="car-hire.html" class="dropdown-item">Car-Hire Services</a>
+                                <a href="gallery.html" class="dropdown-item">Gallery</a>
+                                <a href="bird-watching.html" class="dropdown-item active">Bird Watching</a>
+                                <a href="gorilla-trekking.html" class="dropdown-item">Gorilla Trekking</a>
+                                <a href="communities.html" class="dropdown-item">Communities</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0">
+        <div id="header-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/ter-community-3.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+
+                            <h4 class="display-3 text-white mb-md-4">Communities & Wildlife</h4>
+                            <a href="contact.html" class="btn btn-primary py-md-3 px-md-5 mt-2">Inquire</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img class="w-100" src="img/ter-2.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+
+                            <h4 class="display-3 text-white mb-md-4">The Big-5 Safari</h4>
+                            <a href="contact.html" class="btn btn-primary py-md-3 px-md-5 mt-2">Inquire</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img class="w-100" src="img/ter-3.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+
+                            <h4 class="display-3 text-white mb-md-4">Bird Watching</h4>
+                            <a href="contact.html" class="btn btn-primary py-md-3 px-md-5 mt-2">Inquire</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img class="w-100" src="img/ter-gorilla-trekking-122.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+
+                            <h4 class="display-3 text-white mb-md-4">Gorilla Trekking</h4>
+                            <a href="contact.html" class="btn btn-primary py-md-3 px-md-5 mt-2">Inquire</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
+                <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                    <span class="carousel-control-prev-icon mb-n2"></span>
+                </div>
+            </a>
+            <a class="carousel-control-next" href="#header-carousel" data-slide="next">
+                <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                    <span class="carousel-control-next-icon mb-n2"></span>
+                </div>
+            </a>
+
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Booking Start -->
+    
+    <div class="container-fluid booking mt-5 pb-5">
+        <div class="container pb-5">
+            <div class="bg-light shadow" style="padding: 30px;">
+                <form name="sentMessage" id="contactForm" action="booking_form.php" method="post">
+                    <div class="row align-items-center" style="min-height: 60px;">
+                        <div class="col-md-10">
+                            <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="mb-3 mb-md-0">
+                                            <select class="custom-select px-4" style="height: 47px;" id="destination" name="destination" required="required">
+                                                <option selected>Destination</option>
+                                                <option value="1">Destination 1</option>
+                                                <option value="2">Destination 2</option>
+                                                <option value="3">Destination 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="mb-3 mb-md-0">
+                                            <div class="date" id="date1" data-target-input="nearest">
+                                                <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="depart-date" name="depart-date" class="form-control p-4 " placeholder="Depart Date"  required="required"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="mb-3 mb-md-0">
+                                            <div class="date" id="date2" data-target-input="nearest">
+                                                <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="return-date" name="return-date" class="form-control p-4 " placeholder="Return Date"  required="required"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="mb-3 mb-md-0">
+                                            <select class="custom-select px-4" id="duration" name="duration" style="height: 47px;" required="required">
+                                                <option selected>Duration</option>
+                                                <option value="1">Duration 1</option>
+                                                <option value="2">Duration 2</option>
+                                                <option value="3">Duration 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-primary btn-block" type="submit" style="height: 47px; margin-top: -2px;">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-lg-6" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100" src="img/ter-murchison-pic-1.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 pt-5 pb-lg-5">
+                    <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
+                        <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">About Us</h6>
+                        <h1 class="mb-3">Authentic African Safari Experiences in Uganda & East Africa</h1>
+                        <p>Terrain Safaris is a leading safari and adventure travel company offering authentic, tailor-made
+                            experiences across Uganda and East Africa. We specialize in mountain gorilla trekking, wildlife safaris,
+                            cultural journeys, and immersive nature adventures that reveal the true spirit of Africa.<br>
+
+                            <br>With expert local guides, seamless planning, and a commitment to responsible tourism, we craft unforgettable
+                            journeys from the misty forests of Bwindi to the iconic savannahs of Queen Elizabeth and Murchison Falls,
+                            extending to Rwanda, Kenya, and Tanzania.<br>
+
+                            <br>At Terrain Safaris, every journey is designed to inspire, connect, and transform because with us, you
+                            don’t just travel Africa, you experience it.</p>
+                        <div class="row mb-4">
+                            <div class="col-6">
+                                <img class="img-fluid" src="img/ter-shoebill-in-swamp.jpg" alt="">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid" src="img/ter-mountain-gorilla-1.jpg" alt="">
+                            </div>
+                        </div>
+                        <a href="" class="btn btn-primary mt-1">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Feature Start -->
+    <div class="container-fluid pb-5">
+        <div class="container pb-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="d-flex mb-4 mb-lg-0">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3" style="height: 100px; width: 100px;">
+                            <i class="fa fa-2x fa-money-check-alt text-white"></i>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <h5 class="">Competitive Pricing</h5>
+                            <p class="m-0">Enjoy premium safari experiences with transparent, fair pricing tailored to your travel
+                                needs and budget.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex mb-4 mb-lg-0">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3" style="height: 100px; width: 100px;">
+                            <i class="fa fa-2x fa-award text-white"></i>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <h5 class="">Best Services</h5>
+                            <p class="m-0">Experience exceptional safari services delivered by expert guides, seamless planning, and
+                                personalized travel support.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex mb-4 mb-lg-0">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3" style="height: 100px; width: 100px;">
+                            <i class="fa fa-2x fa-globe text-white"></i>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <h5 class="">Adventure Coverage</h5>
+                            <p class="m-0">Explore unforgettable adventures across Uganda and East Africa with flexible safari
+                                packages for global travelers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+    <!-- Packages Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Packages</h6>
+                <h1>Safari Itineraries</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="img/ter-gorilla-1.jpg" alt="">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days Gorilla Trekking Safari</small>
+                            </div>
+                            <a class="h5 text-decoration-none" href="3-days-itineary.html">From walking safaris in L.Mburo Park to tracking chimpazees
+                                and mountain gorillas trekking in Mgahinga & Bwindi park.</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5</h6>
+                                    <a class="h5 text-decoration-none" href="3-days-itineary.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="img/ter-city-trips.jpg" alt="">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>1 day City Trips</small>
+                            </div>
+                            <a class="h5 text-decoration-none" href="1-day-itineary.html">Experiernce a city trip featuring cultural
+                                sites, markets, monuments, local cuisine for an unforgettable urban adventure.</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5</h6>
+                                    <a class="h5 text-decoration-none" href="1-day-itineary.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="img/ter-rhinos-at-Ziwa.jpg" alt="">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days Murchison Falls Safari</small>
+                            </div>
+                            <a class="h5 text-decoration-none" href="3-days-murchison-itineary.html">Track rhinos at Ziwa Sanctuary, chimpanzees
+                                in Budongo Forest, and marvel at the iconic Murchison Falls. Enjoy game drives.</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5</h6>
+                                    <a class="h5 text-decoration-none" href="3-days-murchison-itineary.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="img/ter-uganda-discovery-package-1.jpg" alt="">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>6 days Uganda Discovery Safari</small>
+                            </div>
+                            <a class="h5 text-decoration-none" href="6-days-itineary.html">Embark on a truly unforgettable journey through Uganda’s
+                                lush landscapes, wildlife, and rich cultural heritage</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.9</h6>
+                                    <a class="h5 text-decoration-none" href="6-days-itineary.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="img/ter-murchison-package-1.JPEG" alt="">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>14 days East-African Round Safari</small>
+                            </div>
+                            <a class="h5 text-decoration-none" href="14-days-itineary.html">Highlights of the safari are; Explore rolling hills,
+                                shimmering lakes, and lush greenery while connecting with local traditions.</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>5.0</h6>
+                                    <a class="h5 text-decoration-none" href="14-days-itineary.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="img/ter-shoebill-2.jpg" alt="">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>5 days Bird watching Safari</small>
+                            </div>
+                            <a class="h5 text-decoration-none" href="5-days-itineary.html">Track the iconic shoebill stork, enjoy walking safaris at Lake Mburo,
+                                and experience the rare Gorilla Habituation in Bwindi.</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>5.0</h6>
+                                    <a class="h5 text-decoration-none" href="5-days-itineary.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Packages End -->
+
+    <!-- Destination Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Most Visited Destinations</h6>
+                <h1>National Game-Parks</h1>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/ter-rwanda-gorilla-1.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">BWINDI IMPENETRABLE </h5>
+                            <span>Mountain Gorilla Trekking</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/ter-queen-climbing-lion.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">QUEEN ELIZABETH</h5>
+                            <span>The Big Seven</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/ter-ziwa-rhinos-1.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">MURCHISON FALLS</h5>
+                            <span>Waterfalls & Wildlife</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/ter-uganda-discovery-package-1.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">MGAHINGA</h5>
+                            <span>Land of Perimates</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/ter-lak-mburo-1.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">LAKE MBURO</h5>
+                            <span>Walking and Short Safaris</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/ter-south-sudan-1.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">KIDEPO VALLEY</h5>
+                            <span>Culture & Wildlife</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Destination Start -->
+
+    <!-- other countries of service Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Our Safaris Extend around East-Africa</h6>
+                <h1>Other Top Destinations</h1>
+            </div>
+            <div class="row pb-3">
+                <div class="col-lg-4 col-md-6 mb-4 pb-2">
+                    <div class="blog-item">
+                        <div class="position-relative">
+                            <img class="img-fluid w-100" src="img/ter-rwanda-gorilla-2.jpg" alt="">
+                            <div class="blog-date">
+                                <h6 class="font-weight-bold mb-n1">04</h6>
+                                <small class="text-white text-uppercase">Trips</small>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4">
+                            <div class="d-flex mb-2">
+                                <a class="text-primary text-uppercase text-decoration-none" href="rwanda-safari-package.html">RWANDA</a>
+                                <span class="text-primary px-2">|</span>
+                                <a class="text-primary text-uppercase text-decoration-none" href="rwanda-safari-package.html">safari packages</a>
+                            </div>
+                            <a class="h5 m-0 text-decoration-none" href="bird-watching.html">Luxury gorilla trekking, volcano hikes,
+                                and cultural tours in Rwanda’s pristine national parks and Kigali city. Land of a thousand Hills.</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 pb-2">
+                    <div class="blog-item">
+                        <div class="position-relative">
+                            <img class="img-fluid w-100" src="img/ter-kenya-giraffe-1.jpg" alt="">
+                            <div class="blog-date">
+                                <h6 class="font-weight-bold mb-n1">03</h6>
+                                <small class="text-white text-uppercase">Trips</small>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4">
+                            <div class="d-flex mb-2">
+                                <a class="text-primary text-uppercase text-decoration-none" href="kenya-safari-packages.html">KENYA</a>
+                                <span class="text-primary px-2">|</span>
+                                <a class="text-primary text-uppercase text-decoration-none" href="kenya-safari-packages.html">safari packages</a>
+                            </div>
+                            <a class="h5 m-0 text-decoration-none" href="bird-watching.html">Big Five safaris, Maasai Mara migrations,
+                                beach holidays, and luxury lodges across Kenya’s iconic wildlife destinations.</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 pb-2">
+                    <div class="blog-item">
+                        <div class="position-relative">
+                            <img class="img-fluid w-100" src="img/ter-great-migration-1.jpg" alt="">
+                            <div class="blog-date">
+                                <h6 class="font-weight-bold mb-n1">02</h6>
+                                <small class="text-white text-uppercase">Trips</small>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4">
+                            <div class="d-flex mb-2">
+                                <a class="text-primary text-uppercase text-decoration-none" href="tanzania-safari-packages.html">TANZANIA</a>
+                                <span class="text-primary px-2">|</span>
+                                <a class="text-primary text-uppercase text-decoration-none" href="tanzania-safari-packages.html">safari packages</a>
+                            </div>
+                            <a class="h5 m-0 text-decoration-none" href="bird-watching.html">Serengeti safaris, Mount Kilimanjaro climbs,
+                                Ngorongoro Crater tours, and Zanzibar beach escapes in Tanzania.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- other destinations End -->
+
+
+    <!-- Service Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Services</h6>
+                <h1>Tours & Travel Services</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-item bg-white text-center mb-2 py-5 px-4">
+                        <i class="fa fa-2x fa-route mx-auto mb-4"></i>
+                        <h5 class="mb-2">Travel Guide</h5>
+                        <p class="m-0">Our expert guides deliver insightful, friendly, and professional guidance, helping
+                            travelers discover wildlife, culture, and hidden gems with confidence.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-item bg-white text-center mb-2 py-5 px-4">
+                        <i class="fa fa-2x fa-ticket-alt mx-auto mb-4"></i>
+                        <h5 class="mb-2">Car-hire</h5>
+                        <p class="m-0">We provide reliable safari vehicles with experienced drivers, offering comfort, safety,
+                            and flexibility for smooth travel across Uganda and East Africa.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-item bg-white text-center mb-2 py-5 px-4">
+                        <i class="fa fa-2x fa-hotel mx-auto mb-4"></i>
+                        <h5 class="mb-2">Gorilla Permits</h5>
+                        <p class="m-0">We secure authentic gorilla permits with ease, ensuring guaranteed access, seamless
+                            processing, and unforgettable encounters in Bwindi and Mgahinga forests.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+    <!-- Registration Start -->
+    <div class="container-fluid bg-registration py-5" style="margin: 90px 0;">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-7 mb-5 mb-lg-0">
+                    <div class="mb-4">
+                        <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Special Safari Offer</h6>
+                        <h1 class="text-white"><span class="text-primary">30% OFF</span> Honeymoon & Family Safaris</h1>
+                    </div>
+                    <p class="text-white">
+                        Discover unforgettable honeymoon safaris and educational wildlife trips for children across Uganda and East Africa.
+                        Enjoy romantic lodges, guided game drives, and inspiring nature learning experiences.</p>
+                    <ul class="list-inline text-white m-0">
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Romantic honeymoon safaris in national parks and luxury lodges</li>
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Educational wildlife tours for children and school groups</li>
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Expert guides, safe travel, and customized safari packages</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="card border-0">
+                        <div class="card-header bg-primary text-center p-4">
+                            <h1 class="text-white m-0">Contact Us</h1>
+                        </div>
+                        <div class="card-body rounded-bottom bg-white p-5">
+                            <form name="sentMessage" id="contactForm" action="contact_form.php" method="post">
+                                <div class="form-row">
+                                    <div class="control-group col-sm-6">
+                                        <input type="text" class="form-control p-4" id="name" name="name" placeholder="Your Name"
+                                            required="required" data-validation-required-message="Please enter your name" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="control-group col-sm-6">
+                                        <input type="email" class="form-control p-4" id="email" name="email" placeholder="Your Email"
+                                            required="required" data-validation-required-message="Please enter your email" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <input type="text" class="form-control p-4" id="subject" name="subject" placeholder="Subject"
+                                        required="required" data-validation-required-message="Please enter a subject" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group">
+                                    <textarea class="form-control py-3 px-4" rows="5" id="message" name="message" placeholder="Message"
+                                        required="required"
+                                        data-validation-required-message="Please enter your message"></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="text-center">
+                                    <button class="btn btn-primary py-3 px-4" type="submit" id="sendMessageButton">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Registration End -->
+
+
+    <!-- Team Start -->
+    <!--<div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Guides</h6>
+                <h1>Our Travel Guides</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
+                    <div class="team-item bg-white mb-4">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h5 class="text-truncate">Guide Name</h5>
+                            <p class="m-0">Designation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
+                    <div class="team-item bg-white mb-4">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h5 class="text-truncate">Guide Name</h5>
+                            <p class="m-0">Designation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
+                    <div class="team-item bg-white mb-4">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h5 class="text-truncate">Guide Name</h5>
+                            <p class="m-0">Designation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
+                    <div class="team-item bg-white mb-4">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/team-4.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h5 class="text-truncate">Guide Name</h5>
+                            <p class="m-0">Designation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Testimonial</h6>
+                <h1>What Our Clients say.... </h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="text-center pb-4">
+                   <!-- <img class="img-fluid mx-auto" src="img/testimonial-1.jpg" style="width: 100px; height: 100px;" >-->
+                    <div class="testimonial-text bg-white p-4 mt-n5">
+                        <p class="mt-5">We (mother and adult son) spent 9 fantastic days in Uganda in March 2024. This country
+                            is still relatively unfrequented by tourists, but is easy to travel around, in our case with a local guide.
+                            We were very lucky with Paul from Terrain Safaris.<br>
+                            <br>The tour was planned according to our wishes and everything was perfectly organized (transfer, accommodation,
+                            food, permits, and much more). We also particularly appreciated his careful driving style. <br>
+                            <br>In his company we were able to travel safely through this diverse country and Paul never tired of showing
+                            us local animals and explaining the country and its traditions to us. Birds are his great passion, and there
+                            are so many different ones. We are thrilled by this wonderful country and I can highly recommend Uganda and
+                            of course Paul from Terrain Safaris to anyone who loves nature.</p>
+                        <h5 class="text-truncate"> evi reinstadler </h5>
+                       <!-- <span>Profession</span>-->
+                    </div>
+                </div>
+
+                <div class="text-center pb-4">
+                    <!-- <img class="img-fluid mx-auto" src="img/testimonial-1.jpg" style="width: 100px; height: 100px;" >-->
+                    <div class="testimonial-text bg-white p-4 mt-n5">
+                        <p class="mt-5">Had a fantastic trip planned and organised well by Terrain Safaris to Tanzania.
+                            The wildlife safaris were great, the accommodations we great and the trip was nicely put
+                            together and executed.</p>
+                        <h5 class="text-truncate">Mahalakshmi Dakshinamurthy</h5>
+                        <!-- <span>Profession</span>-->
+                    </div>
+                </div>
+
+                <!--<div class="text-center pb-4">
+
+                    <div class="testimonial-text bg-white p-4 mt-n5">
+                        <p class="mt-5">My wife and I recently returned from a wonderful 28-day combined birding and wildlife safari
+                            in Uganda led by our very talented tour guide, Paul, who is the owner of Terrain Safaris. If you are someone
+                            who loves nature, seeing wild life amidst breathtaking scenery, having unforgettable once-in-a-lifetime
+                            experiences like gorilla and chimpanzee trekking, then this is the dream trip you need to take.<br>
+
+                            <br>And if you have an interest in birding, as we do, then prepare to be more spoiled by the variety and number
+                            of species of birds that you will have the opportunity to see. There are about 1,000 different species of bird
+                            that can be seen in Uganda, and in our 4 weeks, we were able to see almost 500 different species.<br>
+
+                            <br>Every aspect of our trip was well planned. The lodges where we stayed ranged from clean basic accommodations to
+                            relatively plush lodges located in very scenic settings, based on what was available in the locations
+                            where we were touring.<br>
+
+                           <br> We traveled in a Toyota Land Cruiser competently driven by our guide Paul. As is common in many African countries,
+                            many of the roads were unpaved dirt roads, so we were treated to the well-known "African Massage" that these dirt
+                            roads provided.<br>
+
+                            <br>Paul is a talented knowledgeable guide in all respects. He is a calm, interesting, and very likeable person with
+                            a good sense of humor. As a birding guide, he is exceptional, with the ability to recognize almost 1,000 different
+                            species of birds by their calls alone, and to then quickly locate them even in densely vegetated habitats.<br>
+
+                            <br>Perhaps the best compliment that I can give Paul is to say that as great as he is as a birding guide,
+                            he is even a greater person.<br>
+
+                            <br>Obviously, we loved our unforgettable journey to Uganda, and we want to thank Paul and his company for making
+                            all of it possible.
+                        </p>
+                        <h5 class="text-truncate">Bruce Jersey</h5>
+
+                    </div>
+                </div>-->
+
+               <!-- <div class="text-center pb-4">
+
+                    <div class="testimonial-text bg-white p-4 mt-n5">
+                        <p class="mt-5">I loved my 28 day Birding and Wildlife Safari Uganda trip with Terrain Safaris. It was the
+                            perfect combination of bird watching and wildlife viewing. Every day brought a new adventure filled with
+                            unforgettable memories.<br>
+                            <br>Paul KK is a great birding guide and wildlife spotter. Over the course of the trip, I took over 19,000 photos,
+                            some of which I will add to this review when the photos are ready. He has an excellent ear for bird sounds and
+                            was very knowledgeable of the birds in any particular area.<br>
+                            <br>We saw almost 500 birds of which 347 were life birds for me. Of course, I was also thrilled to see wildlife such
+                            as leopards, lions, zebras, etc, but also wildlife that was totally new for me, such as a Blue Monkey and Red-tailed
+                            Monkeys, among others.<br>
+                            <br>Our trip was well paced with more strenuous days ( for example, Gorilla trekking) alternating with more relaxed
+                            days (birding locally by vehicle). There were some days when we were changing locations/environments and that meant
+                            a lot of driving, but we always stopped for interesting birds and enjoyed the local scenery on the way.<br>
+                            <br>We stayed in a variety of lodging, all well located for our birding and wildlife adventures. At one of the lodges,
+                            we could watch and hear the hippos and sometimes, the elephants, in the body of water that was down the hill from
+                            where our room was located. At another lodge I could sit on my porch and watch the birds flit around the trees at sunset.<br>
+                            I hope to return to Uganda to look for more birds and wildlife and I would definitely book again with Paul and Terrain Safaris.
+                        </p>
+                        <h5 class="text-truncate">Eileen G</h5>
+
+                    </div>
+                </div>-->
+
+                <div class="text-center pb-4">
+                    <!-- <img class="img-fluid mx-auto" src="img/testimonial-1.jpg" style="width: 100px; height: 100px;" >-->
+                    <div class="testimonial-text bg-white p-4 mt-n5">
+                        <p class="mt-5">Terrain Safaris, and our very experienced guide Paul, provided us with a Trip of a Lifetime!
+                            Every detail was planned out with our needs in mind, and the places selected were beyond all expectations.
+                            We received VIP treatment everywhere we went for 14 days because of the respect and high esteem held for
+                            our guide Paul.<br>
+                            <br>The people, animals, birds and countryside were all magnificent. We hope to return someday and
+                            will recommend and use Terrain Safaris. Thank you for your excellent service.
+                        </p>
+                        <h5 class="text-truncate">Margie & Randy Downey</h5>
+                        <!-- <span>Profession</span>-->
+                    </div>
+                </div>
+
+                <div class="text-center pb-4">
+                    <!-- <img class="img-fluid mx-auto" src="img/testimonial-1.jpg" style="width: 100px; height: 100px;" >-->
+                    <div class="testimonial-text bg-white p-4 mt-n5">
+                        <p class="mt-5">I spent 7 days on a private Safari with Terrain Safaris and received excellent service
+                            all around. I'd recommend them to anyone!</p>
+                        <h5 class="text-truncate">Hendrik Prause</h5>
+                        <!-- <span>Profession</span>-->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- other countries of service Start -->
+   <!-- <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Our Safaris Extend around East-Africa</h6>
+                <h1>Other Top Destinations</h1>
+            </div>
+            <div class="row pb-3">
+                <div class="col-lg-4 col-md-6 mb-4 pb-2">
+                    <div class="blog-item">
+                        <div class="position-relative">
+                            <img class="img-fluid w-100" src="img/ter-rwanda-gorilla-2.jpg" alt="">
+                            <div class="blog-date">
+                                <h6 class="font-weight-bold mb-n1">04</h6>
+                                <small class="text-white text-uppercase">Trips</small>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4">
+                            <div class="d-flex mb-2">
+                                <a class="text-primary text-uppercase text-decoration-none" href="">RWANDA</a>
+                                <span class="text-primary px-2">|</span>
+                                <a class="text-primary text-uppercase text-decoration-none" href="">safari packages</a>
+                            </div>
+                            <a class="h5 m-0 text-decoration-none" href="bird-watching.html">Luxury gorilla trekking, volcano hikes,
+                                and cultural tours in Rwanda’s pristine national parks and Kigali city. Land of a thousand Hills.</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 pb-2">
+                    <div class="blog-item">
+                        <div class="position-relative">
+                            <img class="img-fluid w-100" src="img/ter-kenya-giraffe-1.jpg" alt="">
+                            <div class="blog-date">
+                                <h6 class="font-weight-bold mb-n1">03</h6>
+                                <small class="text-white text-uppercase">Trips</small>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4">
+                            <div class="d-flex mb-2">
+                                <a class="text-primary text-uppercase text-decoration-none" href="">KENYA</a>
+                                <span class="text-primary px-2">|</span>
+                                <a class="text-primary text-uppercase text-decoration-none" href="">safari packages</a>
+                            </div>
+                            <a class="h5 m-0 text-decoration-none" href="bird-watching.html">Big Five safaris, Maasai Mara migrations,
+                                beach holidays, and luxury lodges across Kenya’s iconic wildlife destinations.</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 pb-2">
+                    <div class="blog-item">
+                        <div class="position-relative">
+                            <img class="img-fluid w-100" src="img/ter-great-migration-1.jpg" alt="">
+                            <div class="blog-date">
+                                <h6 class="font-weight-bold mb-n1">02</h6>
+                                <small class="text-white text-uppercase">Trips</small>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4">
+                            <div class="d-flex mb-2">
+                                <a class="text-primary text-uppercase text-decoration-none" href="">TANZANIA</a>
+                                <span class="text-primary px-2">|</span>
+                                <a class="text-primary text-uppercase text-decoration-none" href="">safari packages</a>
+                            </div>
+                            <a class="h5 m-0 text-decoration-none" href="bird-watching.html">Serengeti safaris, Mount Kilimanjaro climbs,
+                                Ngorongoro Crater tours, and Zanzibar beach escapes in Tanzania.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <!-- other destinations End -->
+
+
+    <!-- Partners Start -->
+    <div class="container-fluid py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="text-uppercase">Our Trusted Partners</h2>
+                <p>We collaborate with leading organizations to deliver world-class safari experiences.</p>
+            </div>
+            <div class="partner-logos">
+                <a href="https://www.ugandawildlife.org/" target="_blank" title="Uganda Wildlife Authority">
+                    <img src="img/uganda-wildlife-logo.png" alt="Uganda Wildlife Authority">
+                </a>
+                <a href="https://www.tripadvisor.com/" target="_blank" title="TripAdvisor">
+                    <img src="img/trip-advisor.jfif" alt="TripAdvisor">
+                </a>
+                <a href="https://www.safaribookings.com/" target="_blank" title="SafariBookings">
+                    <img src="img/safari-bookings-logo.png" alt="SafariBookings">
+                </a>
+                <a href="https://www.visituganda.com/" target="_blank" title="Uganda Tourism Board">
+                    <img src="img/uganda-tourism-board-logo.png" alt="Uganda Tourism Board">
+                </a>
+                <a href="https://www.visitrwanda.com/" target="_blank" title="Visit Rwanda">
+                    <img src="img/ter-visit-rwanda.jpg" alt="Visit Rwanda">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Partners End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="text-primary"><span class="text-white">TERRAIN</span>safaris</h1>
+                </a>
+                <p>Terrain Safaris is a leading safari and adventure travel company incorporated in 2014 under the Articles of Uganda.</p>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Quick Links</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white-50" href="index.html"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                    <a class="text-white-50 mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>About us</a>
+                    <a class="text-white-50 mb-2" href="destination.html"><i class="fa fa-angle-right mr-2"></i>Destination</a>
+                    <a class="text-white-50 mb-2" href="service.html"><i class="fa fa-angle-right mr-2"></i>Services</a>
+                    <a class="text-white-50 mb-2" href="package.html"><i class="fa fa-angle-right mr-2"></i>Packages</a>
+                    <a class="text-white-50 mb-2" href="guide.html"><i class="fa fa-angle-right mr-2"></i>Blogs</a>
+                    <a class="text-white-50 mb-2" href="testimonial1.html"><i class="fa fa-angle-right mr-2"></i>Contant us</a>
+
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">National Parks</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white-50 mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>Bwindi</a>
+                    <a class="text-white-50 mb-2" href="destination.html"><i class="fa fa-angle-right mr-2"></i>Queen Elizabeth</a>
+                    <a class="text-white-50 mb-2" href="service.html"><i class="fa fa-angle-right mr-2"></i>Murchison Falls</a>
+                    <a class="text-white-50 mb-2" href="package.html"><i class="fa fa-angle-right mr-2"></i>Lake Mburo</a>
+                    <a class="text-white-50 mb-2" href="guide.html"><i class="fa fa-angle-right mr-2"></i>Kidepo Valley</a>
+                    <a class="text-white-50 mb-2" href="testimonial1.html"><i class="fa fa-angle-right mr-2"></i>Mgahinga</a>
+                    <!--<a class="text-white-50" href="blog.html"><i class="fa fa-angle-right mr-2"></i>Blog</a>-->
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>Najjanankumbi Kampala-Entebbe rd.</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+256 704625961</p>
+                <p><i class="fa fa-envelope mr-2"></i>terrainsafarisltd@gmail.com</p>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Newsletter</h6>
+                <div class="w-100">
+                    <form action="newsletter_sub.php" method="post">
+                        <div class="input-group">
+                            <input type="email" id="email" name="email" class="form-control border-light" style="padding: 25px;" placeholder="Your Email" required>
+                            <div class="input-group-append">
+                                <button class="btn btn-primary px-3" type="submit">Subscribe</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="row">
+            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white-50">Copyright &copy; <a href="#">Terrain-safaris</a>. All Rights Reserved.</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Kibale Forest National Park Chimpanzee Tracking Uganda | Terrain Safaris</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Kibale Forest National Park, Chimpanzee Tracking Uganda, Primate Safari, CHEX Experience, Uganda Bird Watching, Ndali Lodge, Kibale Rainforest, Eco Tourism Uganda" name="keywords">
+    <meta content="Discover Kibale Forest National Park—Uganda's chimpanzee tracking capital. Track habituated chimps, experience CHEX, spot 13 primate species & 370+ birds in Africa's premier rainforest safari. Plan your primate adventure with Terrain Safaris." name="description">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Kibale Forest National Park Chimpanzee Tracking Uganda | Terrain Safaris">
+    <meta property="og:description" content="Uganda's chimpanzee tracking capital. Experience unforgettable primate encounters, birding adventures & eco-luxury lodges in Kibale's magical rainforest.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.terrain-safaris.com/kibale-forest-park.html">
+    <meta property="og:image" content="https://www.terrain-safaris.com/img/kibale-chimpanzee-safari.jpg">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kibale Forest National Park Chimpanzee Tracking Uganda">
+    <meta name="twitter:description" content="Track chimpanzees in Uganda's premier rainforest. 13 primate species, 370+ birds, and unforgettable eco-adventures await in Kibale Forest National Park.">
+    <meta name="twitter:image" content="https://www.terrain-safaris.com/img/kibale-chimpanzee-safari.jpg">
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "TouristAttraction",
+            "name": "Kibale Forest National Park",
+            "description": "Uganda's premier chimpanzee tracking destination featuring 13 primate species, 370+ bird species, and the unique Chimpanzee Habituation Experience (CHEX) in a pristine tropical rainforest.",
+            "url": "https://www.terrain-safaris.com/kibale-forest-park.html",
+            "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "Uganda",
+                "addressRegion": "Western Uganda, near Fort Portal"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "0.4845",
+                "longitude": "30.3882"
+            },
+            "image": "https://www.terrain-safaris.com/img/kibale-chimpanzee-safari.jpg",
+            "touristType": ["Primate enthusiasts", "Bird watchers", "Eco-travelers", "Family safari groups", "Photography tourists"],
+            "amenityFeature": [
+                {"@type": "LocationFeatureSpecification", "name": "Chimpanzee Tracking", "value": "Daily permits available"},
+                {"@type": "LocationFeatureSpecification", "name": "CHEX Experience", "value": "Full-day habituation program"},
+                {"@type": "LocationFeatureSpecification", "name": "Bird Watching", "value": "370+ species including African pitta"},
+                {"@type": "LocationFeatureSpecification", "name": "Accommodation", "value": "Luxury to budget eco-lodges"}
+            ]
+        }
+    </script>
+
+    <!-- Favicon -->
+    <link href="img/favicon.jpg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --bwindi-green: rgb(6, 150, 131);
+            --hover-lime: rgb(186, 222, 42);
+        }
+        .page-header {
+            background: url('img/ter-kibale-forest-header.jpg') center center no-repeat;
+            background-size: cover;
+        }
+        .section-title {
+            color: var(--bwindi-green);
+            position: relative;
+            padding-bottom: 10px;
+            margin: 30px 0 20px;
+        }
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--bwindi-green);
+        }
+        .un-styled-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .un-styled-list li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+        }
+        .un-styled-list li:before {
+            content: "✓";
+            color: var(--bwindi-green);
+            font-weight: bold;
+            font-size: 1.1em;
+            position: absolute;
+            left: 0;
+            top: 2px;
+        }
+        .activity-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            margin-bottom: 25px;
+            transition: transform 0.3s ease;
+        }
+        .activity-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+        }
+        .activity-img {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+        .highlight-box {
+            background: #f8f9fa;
+            border-left: 4px solid var(--bwindi-green);
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .map-box {
+            height: 450px;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-top: 20px;
+            border: 3px solid var(--bwindi-green);
+        }
+        .faq-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+        }
+        .faq-question {
+            font-weight: 600;
+            color: var(--bwindi-green);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+        .faq-question:hover {
+            color: var(--hover-lime);
+        }
+        .faq-question .arrow {
+            transition: transform 0.3s ease;
+            color: var(--bwindi-green);
+        }
+        .faq-item.active .faq-question .arrow {
+            transform: rotate(45deg);
+        }
+        .faq-answer {
+            margin-top: 10px;
+            display: none;
+            padding-left: 5px;
+        }
+        .upper-content {
+            margin: 30px 0;
+        }
+        .sp-header {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: linear-gradient(135deg, rgba(6,150,131,0.08) 0%, rgba(45,80,22,0.03) 100%);
+            border-radius: 12px;
+            margin-bottom: 2.5rem;
+            border-left: 4px solid var(--bwindi-green);
+        }
+        .location {
+            color: var(--bwindi-green);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        .sp-header h1 {
+            font-size: 2.5rem;
+            color: #2d5016;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            font-weight: 700;
+        }
+        .btn-plan-trip {
+            background: var(--bwindi-green) !important;
+            border-color: var(--bwindi-green) !important;
+            transition: all 0.3s ease !important;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .btn-plan-trip:hover {
+            background: var(--hover-lime) !important;
+            border-color: var(--hover-lime) !important;
+            color: #0a1929 !important;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2) !important;
+        }
+        .back-to-top {
+            background: var(--bwindi-green) !important;
+            border-color: var(--bwindi-green) !important;
+        }
+        .back-to-top:hover {
+            background: var(--hover-lime) !important;
+            border-color: var(--hover-lime) !important;
+            color: #0a1929 !important;
+        }
+        @media (max-width: 768px) {
+            .sp-header h1 {
+                font-size: 2rem;
+            }
+            .page-header .display-4 {
+                font-size: 2rem !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<!-- Topbar Start -->
+<div class="container-fluid bg-light pt-3 d-none d-lg-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <p><i class="fa fa-envelope mr-2"></i>terrainsafarisltd@gmail.com</p>
+                    <p class="text-body px-3">|</p>
+                    <p><i class="fa fa-phone-alt mr-2"></i>+256 772625961</p>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-primary px-3" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="text-primary px-3" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="text-primary px-3" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="text-primary px-3" href=""><i class="fab fa-instagram"></i></a>
+                    <a class="text-primary pl-3" href=""><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Topbar End -->
+
+<!-- Navbar Start -->
+<div class="container-fluid position-relative nav-bar p-0">
+    <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+            <a href="index.html" class="navbar-brand">
+                <h1 class="m-0 text-primary"><span class="text-dark">TERRAIN</span>safaris</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                <div class="navbar-nav ml-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="destination.html" class="nav-item nav-link active">Destinations</a>
+                    <a href="package.html" class="nav-item nav-link">Safari Packages</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Services</a>
+                        <div class="dropdown-menu border-0 rounded-0 m-0">
+                            <a href="blog.html" class="dropdown-item">Blog Grid</a>
+                            <a href="car-hire.html" class="dropdown-item">Car-Hire Services</a>
+                            <a href="gallery.html" class="dropdown-item">Gallery</a>
+                            <a href="bird-watching.html" class="dropdown-item">Bird Watching</a>
+                            <a href="gorilla-trekking.html" class="dropdown-item">Gorilla Trekking</a>
+                            <a href="communities.html" class="dropdown-item">Communities</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Navbar End -->
+
+<!-- Header Start -->
+<div class="container-fluid page-header" style="background: url('img/ter-Kibale-National-Park-201.jpg') center center no-repeat; background-size: cover;">
+    <div class="container">
+        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
+            <h3 class="display-4 text-white text-uppercase">KIBALE FOREST NATIONAL PARK</h3>
+            <div class="d-inline-flex text-white">
+                <p class="m-0 text-uppercase"><a class="text-white" href="index.html">Home</a></p>
+                <i class="fa fa-angle-double-right pt-1 px-3"></i>
+                <p class="m-0 text-uppercase">Kibale</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Header End -->
+
+<!-- Kibale Content Start -->
+<div class="container-fluid py-5">
+    <div class="container py-5">
+
+        <!-- Page Header Section -->
+        <div class="sp-header">
+            <div class="location">Chimpanzee Tracking Capital of Uganda</div>
+            <h1>Kibale Forest National Park</h1>
+            <p class="lead text-muted mt-3">Immerse yourself in Uganda's premier rainforest sanctuary. Track habituated chimpanzees, discover 13 primate species, and birdwatch among 370+ species in Africa's most biodiverse tropical forest.</p>
+        </div>
+
+        <!-- Introduction -->
+        <div class="upper-content">
+            <p>Kibale National Park is Uganda's premier destination for chimpanzee tracking safaris and primate walks. Located in western Uganda near Fort Portal, this tropical rainforest is home to the highest density and variety of primates in East Africa, including over 1,500 chimpanzees. Its beautiful jungle trails, rich birdlife, and connection to nearby crater lakes make it a must-visit for tourists seeking eco safaris in Uganda or a primate-focused wildlife adventure.</p>
+
+            <div class="highlight-box mt-4">
+                <p class="mb-0"><strong>Did You Know?</strong> Kibale Forest contains the highest concentration of primates anywhere in East Africa. With 13 species living side-by-side—including the endangered chimpanzee—it's often called the "Primate Capital of the World." The park's Chimpanzee Habituation Experience (CHEX) offers the rare opportunity to spend a full day alongside researchers observing chimpanzee behavior in real-time.</p>
+            </div>
+        </div>
+
+        <!-- Why Visit Section -->
+        <h3 class="section-title">Why Visit Kibale Forest National Park?</h3>
+        <ul class="un-styled-list">
+            <li><strong>One of Africa's best chimpanzee tracking destinations</strong> – Track habituated communities with expert guides in pristine rainforest</li>
+            <li><strong>Home to 13 primate species</strong> including red colobus, L'Hoest's monkey, black-and-white colobus, and olive baboons</li>
+            <li><strong>Rich biodiversity hotspot</strong>: 70+ mammal species, 370+ bird species (including the rare African pitta), and stunning Afro-montane flora</li>
+            <li><strong>Strategic safari location</strong>: Easy access from Queen Elizabeth National Park, Semuliki, and the Rwenzori Mountains circuit</li>
+            <li><strong>Perfect for short Uganda safaris</strong>: Ideal for family nature tours, birding trips, and combining with gorilla trekking in Bwindi</li>
+            <li><strong>Unique CHEX experience</strong>: Spend unlimited time with chimpanzees during their daily activities—nest to nest</li>
+        </ul>
+
+        <!-- Activities Section -->
+        <h3 class="section-title">Top Activities in Kibale Forest National Park</h3>
+        <ul class="un-styled-list">
+            <li><strong>Chimpanzee Tracking</strong> – Track habituated chimp groups with expert UWA guides through magical forest trails (permits required)</li>
+            <li><strong>Chimpanzee Habituation Experience (CHEX)</strong> – Spend a full day following chimps from nest to nest with researchers; limited to 4 visitors per day</li>
+            <li><a href="https://ebird.org/region/UG-C/bird-list" target="_blank" rel="noopener noreferrer"><strong>Bird Watching</strong></a> – Spot the African pitta, green-breasted pitta, yellow-spotted nicator, and 370+ other species</li>
+            <li><strong>Guided Forest Walks</strong> – Explore towering mahoganies, spot butterflies, and encounter elusive mammals like forest elephants</li>
+            <li><strong>Crater Lake Hikes & Community Tours</strong> – Combine nature and culture in the scenic Ndali-Kasenda Crater Region with local guides</li>
+            <li><strong>Nocturnal Walks</strong> – Look out for bush babies, nightjars, tree hyrax, and pottos after dark with spotlight guides</li>
+            <li><strong>Photography Safaris</strong> – Incredible dappled light, intimate wildlife encounters, and unspoiled scenery ideal for professional photographers</li>
+        </ul>
+
+        <!-- Activity Gallery -->
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="activity-card">
+                    <img src="img/ter-kyambura-chimpazees.jpg" alt="Chimpanzee Tracking in Kibale Forest" class="activity-img">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="activity-card">
+                    <img src="img/ter-Kibale-Forest-National-Park-primates.jpg" alt="Red Colobus Monkey Kibale" class="activity-img">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="activity-card">
+                    <img src="img/ter-Birding-in-Kibale-National-Park-1.jpg" alt="Bird Watching in Kibale Rainforest" class="activity-img">
+                </div>
+            </div>
+        </div>
+
+        <!-- Accommodation Section -->
+        <div class="upper-content">
+            <h3 class="section-title">Accommodation in Kibale Forest National Park</h3>
+            <p>Kibale offers a wide range of forest lodges and eco-retreats for every traveler, all carefully vetted by Terrain Safaris for sustainability, comfort, and authentic experiences:</p>
+
+            <h4 class="mt-4 mb-3" style="color: var(--bwindi-green);">Popular accommodation facilities include:</h4>
+            <ul class="un-styled-list">
+                <li><strong>Luxury:</strong> <em>Ndali Lodge</em> – Perched on a crater lake with panoramic forest views, gourmet dining, and private cottages. <em>Kyaninga Lodge</em> – Stunning architecture overlooking a deep crater lake, infinity pool, and exceptional service.</li>
+                <li><strong>Midrange:</strong> <em>Primate Lodge Kibale</em> – Located at the park edge with comfortable bandas, restaurant, and easy chimp trek access. <em>Isunga Lodge</em> – Eco-friendly lodge with cultural experiences and crater lake views.</li>
+                <li><strong>Budget:</strong> <em>Kibale Forest Camp</em> – Simple but clean tents and bandas with shared facilities, ideal for backpackers. <em>Chimpanzee Forest Guest House</em> – Community-run guesthouse near the park gate with authentic local hospitality.</li>
+            </ul>
+            <p class="mt-3"><em>All partner lodges support local conservation projects and employ community members. Terrain Safaris prioritizes eco-certified properties committed to sustainable tourism practices.</em></p>
+        </div>
+
+        <!-- Best Time to Visit -->
+        <div class="upper-content">
+            <h3 class="section-title">Best Time to Visit Kibale Forest National Park</h3>
+            <ul class="un-styled-list">
+                <li><strong>Dry Seasons (December to February & June to September):</strong> Optimal for chimpanzee tracking and forest hikes. Trails are less muddy, wildlife congregates near water sources, and photography conditions are excellent. Peak booking periods—reserve permits 3-6 months ahead.</li>
+                <li><strong>Green Seasons (March–May & October–November):</strong> Lush, vibrant scenery with newborn primates and migratory birds. Fewer tourists and lower lodge rates, though trails can be muddy. Chimpanzees remain active year-round.</li>
+                <li><strong>Shoulder Months (May & November):</strong> Balance of good wildlife viewing, manageable crowds, and favorable pricing. Ideal for photographers seeking dramatic rainforest light and misty morning atmospheres.</li>
+                <li><strong>Year-round accessibility:</strong> Unlike some parks, Kibale's rainforest ecosystem supports wildlife viewing in all seasons—making it a reliable addition to any Uganda itinerary.</li>
+            </ul>
+        </div>
+
+        <!-- Getting There -->
+        <div class="upper-content">
+            <h3 class="section-title">How to Get to Kibale Forest National Park</h3>
+            <ul class="un-styled-list">
+                <li><strong>By Road:</strong> Approx. 5–6 hours from Kampala/Entebbe via the scenic Fort Portal route (Kampala → Mubende → Fort Portal → Kibale). Well-maintained tarmac most of the way; 4x4 recommended for lodge access in rainy season.</li>
+                <li><strong>By Air:</strong> Scheduled and chartered flights from Entebbe International Airport (EBB) to Kasese Airstrip (approx. 1 hour), followed by a 1.5–2 hour scenic drive to Kibale. Terrain Safaris arranges seamless airport transfers and meet-and-greet services.</li>
+                <li><strong>Combine Safaris:</strong> Kibale pairs perfectly with Queen Elizabeth National Park (2 hours drive) for a classic "Chimps & Lions" circuit, or with Bwindi for the ultimate "Primates of Uganda" experience.</li>
+            </ul>
+            <p class="mt-3"><strong>Terrain Safaris</strong> handles all logistics: chimpanzee permits, park entry fees, experienced guides, vehicle transfers, and accommodation bookings—so you focus entirely on the adventure.</p>
+        </div>
+
+        <!-- Ideal For Section -->
+        <div class="upper-content">
+            <h3 class="section-title">Ideal For</h3>
+            <ul class="un-styled-list">
+                <li><strong>Primate enthusiasts</strong> seeking intimate chimpanzee encounters and rare monkey species in one location</li>
+                <li><strong>Families, students, and eco-travelers</strong> wanting educational, low-impact nature experiences</li>
+                <li><strong><a href="https://uwec.ug/bird-with-us/" target="_blank" rel="noopener noreferrer">Bird watchers</a></strong> targeting Uganda's rarest forest species including the African pitta and Nahan's francolin</li>
+                <li><strong>Visitors combining gorilla and chimp tracking</strong> in one unforgettable Uganda primate safari</li>
+                <li><strong>Photographers</strong> seeking dappled forest light, intimate wildlife portraits, and dramatic crater lake landscapes</li>
+                <li><strong>Sustainable tourism advocates</strong> interested in community-based conservation and responsible travel practices</li>
+            </ul>
+        </div>
+
+        <!-- Map Section -->
+        <div class="upper-content">
+            <h3 class="section-title">Location & Access Map</h3>
+            <div class="map-box">
+                <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19959.036146514287!2d30.38824175819095!3d0.4844769025621366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1763050bb1e7c44d%3A0x81e72f0559f7f707!2sKibale%20National%20Park!5e0!3m2!1sen!2sug!4v1698484989043!5m2!1sen!2sug"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Kibale Forest National Park Location Map">
+                </iframe>
+            </div>
+            <p class="text-center text-muted mt-3 small">
+                <i class="fa fa-map-marker-alt mr-1"></i> Kibale Forest National Park is located in western Uganda near Fort Portal, approximately 320km from Kampala.
+                Terrain Safaris provides detailed pre-trip briefings, GPS coordinates, and 24/7 support for seamless navigation.
+            </p>
+        </div>
+
+        <!-- CTA Section with Special Button -->
+        <div class="text-center mt-5 py-4" style="background: linear-gradient(135deg, #2d5016 0%, var(--bwindi-green) 100%); border-radius: 12px; color: white;">
+            <h3 class="mb-3" style="color: white;">Ready to Track Chimpanzees in Africa's Primate Capital?</h3>
+            <p class="lead mb-4" style="max-width: 700px; margin: 0 auto; opacity: 0.95;">Join our expert-led chimpanzee tracking safaris or design a private primate-focused itinerary to Kibale Forest with luxury eco-lodges, certified guides, and unforgettable wildlife encounters.</p>
+            <a href="contact.html" class="btn btn-primary py-3 px-5 btn-plan-trip">
+                Plan a Trip in Kibale <i class="fa fa-arrow-right ml-2"></i>
+            </a>
+            <p class="mt-3 small" style="opacity: 0.9;">
+                <i class="fa fa-check-circle mr-1"></i> Guaranteed chimp permits &nbsp;|&nbsp;
+                <i class="fa fa-check-circle mr-1"></i> Flexible booking &nbsp;|&nbsp;
+                <i class="fa fa-check-circle mr-1"></i> Carbon-offset adventures
+            </p>
+        </div>
+
+        <!-- FAQs Section -->
+        <div class="upper-content">
+            <h3 class="section-title">Frequently Asked Questions</h3>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    1. How do I obtain a chimpanzee tracking permit?
+                    <span class="arrow"><i class="fa fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Chimpanzee tracking permits are issued by the Uganda Wildlife Authority (UWA) and are limited to protect the chimpanzees. Terrain Safaris secures permits on your behalf—book 3-6 months in advance for peak seasons (Dec-Feb, Jun-Sep). Permits include park entry, guide services, and one hour with the chimpanzees. CHEX permits (full-day experience) are even more limited and require early reservation.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    2. Are there cultural experiences available near Kibale National Park?
+                    <span class="arrow"><i class="fa fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! The Fort Portal region offers rich cultural encounters with the Batooro and Bakiga communities. Visit traditional villages, learn about local crafts like basket weaving and bark cloth making, enjoy community-led nature walks, or participate in coffee farm tours. Terrain Safaris partners with community-based tourism initiatives ensuring fair compensation and authentic, respectful interactions.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    3. Can I see other primates besides chimpanzees in Kibale National Park?
+                    <span class="arrow"><i class="fa fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely! Kibale is home to 13 primate species. Alongside chimpanzees, you may spot red colobus monkeys (often seen in large, noisy troops), black-and-white colobus, L'Hoest's monkey, grey-cheeked mangabey, olive baboon, blue monkey, red-tailed monkey, and more. Our expert guides know the best trails and times to maximize your primate sightings.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    4. Do I have to buy a ticket for my infant?
+                    <span class="arrow"><i class="fa fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Chimpanzee tracking permits are required for all participants aged 15 and above. Children under 15 cannot participate in chimp tracking for safety and conservation reasons. However, families with younger children can enjoy guided forest walks, birding tours, crater lake hikes, and cultural experiences. Terrain Safaris designs family-friendly itineraries that accommodate all ages while prioritizing safety and conservation guidelines.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    5. What should I pack for a visit to Kibale National Park?
+                    <span class="arrow"><i class="fa fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Essential items include: lightweight, breathable long-sleeved clothing in neutral colors (protects from insects and stinging nettles); sturdy, waterproof hiking boots with good grip; gardening gloves for gripping vegetation; a wide-brimmed hat and high-SPF sunscreen; insect repellent with DEET; binoculars (10x42 recommended); a quality camera with zoom lens; a reusable water bottle; and a lightweight rain jacket. Terrain Safaris provides a detailed pre-departure packing list tailored to your itinerary and season.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- Kibale Content End -->
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+    <div class="row pt-5">
+        <div class="col-lg-3 col-md-6 mb-5">
+            <a href="index.html" class="navbar-brand">
+                <h1 class="text-primary"><span class="text-white">TERRAIN</span>safaris</h1>
+            </a>
+            <p>Terrain Safaris is a leading safari and adventure travel company incorporated in 2014 under the Articles of Uganda.</p>
+            <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
+            <div class="d-flex justify-content-start">
+                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Quick Links</h5>
+            <div class="d-flex flex-column justify-content-start">
+                <a class="text-white-50" href="index.html"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                <a class="text-white-50 mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>About us</a>
+                <a class="text-white-50 mb-2" href="mgahinga-park.html"><i class="fa fa-angle-right mr-2"></i>Mgahinga</a>
+                <a class="text-white-50 mb-2" href="package.html"><i class="fa fa-angle-right mr-2"></i>Packages</a>
+                <a class="text-white-50" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contact us</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">National Parks</h5>
+            <div class="d-flex flex-column justify-content-start">
+                <a class="text-white-50 mb-2" href="bwindi.html"><i class="fa fa-angle-right mr-2"></i>Bwindi</a>
+                <a class="text-white-50 mb-2" href="queen-elizabeth-park.html"><i class="fa fa-angle-right mr-2"></i>Queen Elizabeth</a>
+                <a class="text-white-50 mb-2" href="murchison-falls-park.html"><i class="fa fa-angle-right mr-2"></i>Murchison Falls</a>
+                <a class="text-white-50 mb-2" href="mgahinga-park.html"><i class="fa fa-angle-right mr-2"></i>Mgahinga</a>
+                <a class="text-white-50 mb-2" href="kidepo-valley-park.html"><i class="fa fa-angle-right mr-2"></i>Kidepo Valley</a>
+                <a class="text-white-50 mb-2" href="kibale-forest-park.html"><i class="fa fa-angle-right mr-2"></i>Kibale Forest</a>
+                <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Lake Mburo</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
+            <p><i class="fa fa-map-marker-alt mr-2"></i>Freedom City Mall, Entebbe Rd.</p>
+            <p><i class="fa fa-phone-alt mr-2"></i>+256 704625961</p>
+            <p><i class="fa fa-envelope mr-2"></i>terrainsafarisltd@gmail.com</p>
+            <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Newsletter</h6>
+            <div class="w-100">
+                <form action="newsletter_sub.php" method="post">
+                    <div class="input-group">
+                        <input type="email" id="email" name="email" class="form-control border-light" style="padding: 25px;" placeholder="Your Email" required>
+                        <div class="input-group-append">
+                            <button class="btn btn-primary px-3" type="submit" style="background: rgb(6, 150, 131); border-color: rgb(6, 150, 131);">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+    <div class="row">
+        <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+            <p class="m-0 text-white-50">Copyright &copy; <a href="index.html" class="text-white">Terrain-safaris</a>. All Rights Reserved.</p>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top">
+    <i class="fa fa-angle-double-up"></i>
+</a>
+
+<!-- JavaScript for FAQ Toggle -->
+<script>
+    document.querySelectorAll('.faq-question').forEach(item => {
+        item.addEventListener('click', () => {
+            const faqItem = item.parentElement;
+            const answer = item.nextElementSibling;
+            const arrow = item.querySelector('.arrow i');
+
+            // Toggle active class
+            faqItem.classList.toggle('active');
+
+            // Toggle answer visibility
+            if (answer.style.display === 'block') {
+                answer.style.display = 'none';
+                arrow.classList.remove('fa-minus');
+                arrow.classList.add('fa-plus');
+            } else {
+                answer.style.display = 'block';
+                arrow.classList.remove('fa-plus');
+                arrow.classList.add('fa-minus');
+            }
+        });
+    });
+
+    // Smooth scroll for back-to-top button
+    document.querySelector('.back-to-top').addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/tempusdominus/js/moment.min.js"></script>
+<script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+<script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+</body>
+</html>

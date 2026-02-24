@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Kidepo Valley National Park Safari Uganda | Terrain Safaris</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Kidepo Valley National Park, Uganda Safari, Remote Wildlife Safari, Cheetah Safari Uganda, Karamojong Culture, Apoka Safari Lodge, Uganda National Parks, Adventure Travel Africa" name="keywords">
+    <meta content="Discover Kidepo Valley National Park—Uganda's most remote wilderness safari destination. Track cheetahs, ostriches & experience authentic Karamojong culture in Africa's most beautiful national park. Plan your exclusive Uganda safari with Terrain Safaris." name="description">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Kidepo Valley National Park Safari Uganda | Terrain Safaris">
+    <meta property="og:description" content="Uganda's most untouched safari destination. Experience raw wilderness, rare wildlife & authentic cultural encounters in Kidepo Valley National Park.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.terrain-safaris.com/kidepo-valley-park.html">
+    <meta property="og:image" content="https://www.terrain-safaris.com/img/kidepo-valley-safari.jpg">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kidepo Valley National Park Safari Uganda">
+    <meta name="twitter:description" content="Explore Uganda's most remote wilderness safari destination. Rare wildlife, stunning landscapes & cultural adventures await in Kidepo Valley.">
+    <meta name="twitter:image" content="https://www.terrain-safaris.com/img/kidepo-valley-safari.jpg">
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "TouristAttraction",
+            "name": "Kidepo Valley National Park",
+            "description": "Uganda's most remote and untouched safari destination featuring rare wildlife, dramatic landscapes, and authentic cultural experiences with the Karamojong and IK people.",
+            "url": "https://www.terrain-safaris.com/kidepo-valley-park.html",
+            "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "Uganda",
+                "addressRegion": "Karamoja"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "3.8720",
+                "longitude": "33.7909"
+            },
+            "image": "https://www.terrain-safaris.com/img/kidepo-valley-safari.jpg",
+            "touristType": ["Adventure travelers", "Wildlife photographers", "Cultural tourists", "Luxury safari seekers"],
+            "amenityFeature": [
+                {"@type": "LocationFeatureSpecification", "name": "Game Drives", "value": "Available"},
+                {"@type": "LocationFeatureSpecification", "name": "Bird Watching", "value": "470+ species"},
+                {"@type": "LocationFeatureSpecification", "name": "Cultural Encounters", "value": "Karamojong & IK communities"},
+                {"@type": "LocationFeatureSpecification", "name": "Accommodation", "value": "Luxury to budget options"}
+            ]
+        }
+    </script>
+
+    <!-- Favicon -->
+    <link href="img/favicon.jpg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --bwindi-green: rgb(6, 150, 131);
+            --hover-lime: rgb(186, 222, 42);
+        }
+        .page-header {
+            background: url('img/ter-kidepo-valley-header.jpg') center center no-repeat;
+            background-size: cover;
+        }
+        .section-title {
+            color: var(--bwindi-green);
+            position: relative;
+            padding-bottom: 10px;
+            margin: 30px 0 20px;
+        }
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--bwindi-green);
+        }
+        .un-styled-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .un-styled-list li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+        }
+        .un-styled-list li:before {
+            content: "✓";
+            color: var(--bwindi-green);
+            font-weight: bold;
+            font-size: 1.1em;
+            position: absolute;
+            left: 0;
+            top: 2px;
+        }
+        .activity-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            margin-bottom: 25px;
+            transition: transform 0.3s ease;
+        }
+        .activity-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+        }
+        .activity-img {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+        .highlight-box {
+            background: #f8f9fa;
+            border-left: 4px solid var(--bwindi-green);
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .map-box {
+            height: 450px;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-top: 20px;
+            border: 3px solid var(--bwindi-green);
+        }
+        .faq-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+        }
+        .faq-question {
+            font-weight: 600;
+            color: var(--bwindi-green);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+        .faq-question:hover {
+            color: var(--hover-lime);
+        }
+        .faq-question .arrow {
+            transition: transform 0.3s ease;
+            color: var(--bwindi-green);
+        }
+        .faq-item.active .faq-question .arrow {
+            transform: rotate(45deg);
+        }
+        .faq-answer {
+            margin-top: 10px;
+            display: none;
+            padding-left: 5px;
+        }
+        .upper-content {
+            margin: 30px 0;
+        }
+        .sp-header {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: linear-gradient(135deg, rgba(6,150,131,0.08) 0%, rgba(45,80,22,0.03) 100%);
+            border-radius: 12px;
+            margin-bottom: 2.5rem;
+            border-left: 4px solid var(--bwindi-green);
+        }
+        .location {
+            color: var(--bwindi-green);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        .sp-header h1 {
+            font-size: 2.5rem;
+            color: #2d5016;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            font-weight: 700;
+        }
+        .btn-plan-trip {
+            background: var(--bwindi-green) !important;
+            border-color: var(--bwindi-green) !important;
+            transition: all 0.3s ease !important;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .btn-plan-trip:hover {
+            background: var(--hover-lime) !important;
+            border-color: var(--hover-lime) !important;
+            color: #0a1929 !important;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.5) !important;
+        }
+        .back-to-top {
+            background: var(--bwindi-green) !important;
+            border-color: var(--bwindi-green) !important;
+        }
+        .back-to-top:hover {
+            background: var(--hover-lime) !important;
+            border-color: var(--hover-lime) !important;
+            color: #0a1929 !important;
+        }
+        @media (max-width: 768px) {
+            .sp-header h1 {
+                font-size: 2rem;
+            }
+            .page-header .display-4 {
+                font-size: 2rem !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<!-- Topbar Start -->
+<div class="container-fluid bg-light pt-3 d-none d-lg-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <p><i class="fa fa-envelope mr-2"></i>terrainsafarisltd@gmail.com</p>
+                    <p class="text-body px-3">|</p>
+                    <p><i class="fa fa-phone-alt mr-2"></i>+256 772625961</p>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-primary px-3" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="text-primary px-3" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="text-primary px-3" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="text-primary px-3" href=""><i class="fab fa-instagram"></i></a>
+                    <a class="text-primary pl-3" href=""><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Topbar End -->
+
+<!-- Navbar Start -->
+<div class="container-fluid position-relative nav-bar p-0">
+    <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+            <a href="index.html" class="navbar-brand">
+                <h1 class="m-0 text-primary"><span class="text-dark">TERRAIN</span>safaris</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                <div class="navbar-nav ml-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="destination.html" class="nav-item nav-link active">Destinations</a>
+                    <a href="package.html" class="nav-item nav-link">Safari Packages</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Services</a>
+                        <div class="dropdown-menu border-0 rounded-0 m-0">
+                            <a href="blog.html" class="dropdown-item">Blog Grid</a>
+                            <a href="car-hire.html" class="dropdown-item">Car-Hire Services</a>
+                            <a href="gallery.html" class="dropdown-item">Gallery</a>
+                            <a href="bird-watching.html" class="dropdown-item">Bird Watching</a>
+                            <a href="gorilla-trekking.html" class="dropdown-item">Gorilla Trekking</a>
+                            <a href="communities.html" class="dropdown-item">Communities</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Navbar End -->
+
+<!-- Header Start -->
+<div class="container-fluid page-header" style="background: url('img/ter-ostrish-kidepo.jpg') center center no-repeat; background-size: cover;">
+    <div class="container">
+        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
+            <h3 class="display-4 text-white text-uppercase">KIDEPO VALLEY NATIONAL PARK</h3>
+            <div class="d-inline-flex text-white">
+                <p class="m-0 text-uppercase"><a class="text-white" href="index.html">Home</a></p>
+                <i class="fa fa-angle-double-right pt-1 px-3"></i>
+                <p class="m-0 text-uppercase">Kidepo</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Header End -->
+
+<!-- Kidepo Content Start -->
+<div class="container-fluid py-5">
+    <div class="container py-5">
+
+        <!-- Page Header Section -->
+        <div class="sp-header">
+            <div class="location">Uganda's Most Remote and Untouched Safari Destination</div>
+            <h1>Kidepo Valley National Park</h1>
+            <p class="lead text-muted mt-3">Experience the raw beauty of Africa's wildest frontier. Kidepo Valley National Park
+                offers unparalleled solitude, rare wildlife sightings, and authentic cultural encounters in Uganda's northeastern wilderness.</p>
+        </div>
+
+        <!-- Introduction -->
+        <div class="upper-content">
+            <p>Kidepo Valley National Park is the ultimate destination for travelers seeking a true African wilderness safari in Uganda.
+                Tucked away in the remote northeastern corner of Uganda, near the borders of South Sudan and Kenya, Kidepo offers wide
+                open savannahs, dramatic landscapes, and unmatched solitude. Known for its unspoiled beauty and rare wildlife, the
+                park is ideal for tourists looking for authentic Uganda safari experiences far from the crowds.</p>
+
+            <div class="highlight-box mt-4">
+                <p class="mb-0"><strong>Did You Know?</strong> Kidepo was rated by CNN Travel as "Africa's most beautiful national park."
+                    With fewer than 10,000 visitors annually, you'll enjoy exclusive wildlife encounters without crowds—making every game
+                    drive feel like a personal expedition into untouched Africa.</p>
+            </div>
+        </div>
+
+        <!-- Why Visit Section -->
+        <h3 class="section-title">Why Visit Kidepo Valley National Park?</h3>
+        <ul class="un-styled-list">
+            <li>Rated by CNN as <strong>"Africa's most beautiful national park"</strong> Stunning vistas of golden savannahs framed
+                by rugged mountains</li>
+            <li><strong>Best place in Uganda to see cheetahs and ostriches</strong> Plus greater kudus, African wild dogs,
+                and Bright's gazelle</li>
+            <li><strong>Breathtaking views</strong> of Mount Morungole (2,750m) and the vast Karamoja plains stretching to the horizon</li>
+            <li><strong>Rich cultural interactions</strong> with the semi-nomadic Karamojong people and the endangered IK community</li>
+            <li><strong>Unmatched sense of exclusivity</strong> Fewer than 20 vehicles allowed in key zones daily for raw,
+                crowd free adventure</li>
+            <li><strong>Birdwatcher's paradise</strong> Over 470 bird species including the endemic Karamoja apalis and 60+ raptor species</li>
+        </ul>
+
+        <!-- Activities Section -->
+        <h3 class="section-title">Top Activities in Kidepo Valley National Park</h3>
+        <ul class="un-styled-list">
+            <li><strong>Game Drives</strong> Explore the wildlife rich Narus Valley at dawn or dusk to spot lions, buffaloes, giraffes,
+                elephants, and the elusive cheetah</li>
+            <li><strong>Scenic Drives in Kidepo Valley</strong> Discover dry river beds, doum palm oases, and ostriches roaming the
+                golden plains</li>
+            <li><strong>Hiking & Nature Walks</strong> Trek to Mount Morungole, sacred to the IK people, with panoramic views across
+                three countries</li>
+            <li><strong>Cultural Encounters</strong> Visit traditional Karamojong manyattas (homesteads) or hike to remote IK communities
+                to learn about ancient traditions</li>
+            <li><a href="https://ebird.org/region/UG-C/bird-list" target="_blank" rel="noopener noreferrer"><strong>Bird Watching</strong></a>
+                Over 470 bird species, including the Karamoja apalis, Egyptian vulture, and Abyssinian roller</li>
+            <li><strong>Photography Safaris</strong> Incredible golden-hour light, dramatic landscapes, and habituated wildlife ideal
+                for professional photographers</li>
+            <li><strong>Night Game Drives</strong> Spot nocturnal species like aardvarks, bushbabies, and leopards with specialized
+                spotlights (available at select lodges)</li>
+        </ul>
+
+        <!-- Activity Gallery -->
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="activity-card">
+                    <img src="img/ter-kidepo-cheaters-1.jpg" alt="Cheetah in Kidepo Valley" class="activity-img">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="activity-card">
+                    <img src="img/ter-kidepo-Community-tours-2.jpg" alt="Narus Valley Game Drive" class="activity-img">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="activity-card">
+                    <img src="img/ter-zebras-in-kidepo.jpg" alt="Karamojong Cultural Experience" class="activity-img">
+                </div>
+            </div>
+        </div>
+
+        <!-- Accommodation Section -->
+        <div class="upper-content">
+            <h3 class="section-title">Accommodation in Kidepo Valley National Park</h3>
+            <p>While Kidepo is remote, there are exceptional Uganda safari lodges and camps offering breathtaking views and authentic
+                wilderness experiences. All accommodations are carefully vetted by Terrain Safaris for sustainability, comfort, and
+                exceptional service</p>
+
+            <h4 class="mt-4 mb-3" style="color: var(--bwindi-green);">Popular accommodation facilities include:</h4>
+            <ul class="un-styled-list">
+                <li><strong>Luxury:</strong> <em>Apoka Safari Lodge</em> Exclusive private decks, outdoor bathtubs with savannah views,
+                    gourmet dining, and wildlife that wanders through camp. Perfect for honeymooners and luxury travelers.</li>
+                <li><strong>Midrange:</strong> <em>Kidepo Savannah Lodge</em> Comfortable bandas with en-suite facilities, communal dining,
+                    and guided activities. Great value for families and small groups.</li>
+                <li><strong>Budget:</strong> <em>UWA Bandas</em> (Uganda Wildlife Authority) and <em>Nga'Moru Wilderness Camp</em> Basic
+                    but clean accommodations with shared facilities, ideal for backpackers and budget-conscious adventurers.</li>
+            </ul>
+            <p class="mt-3"><em>All lodges support community conservation projects and employ local staff. Terrain Safaris partners only
+                with eco-certified properties committed to sustainable tourism.</em></p>
+        </div>
+
+        <!-- Best Time to Visit -->
+        <div class="upper-content">
+            <h3 class="section-title">Best Time to Visit Kidepo Valley National Park</h3>
+            <ul class="un-styled-list">
+                <li><strong>Dry Season (September to March):</strong> Optimal for wildlife viewing as animals concentrate around
+                    permanent water sources in the Narus Valley. Clear skies and minimal rain make roads easily accessible.
+                    Peak season: December-February.</li>
+                <li><strong>Green Season (April–August):</strong> The park transforms into lush emerald landscapes with newborn animals
+                    and migratory birds. Fewer tourists and lower rates, though some roads may require 4x4 vehicles after heavy rains.</li>
+                <li><strong>Shoulder Months (April & November):</strong> Balance of good wildlife viewing, manageable crowds, and
+                    favorable pricing. Ideal for photographers seeking dramatic storm clouds over golden plains.</li>
+                <li><strong>Year-round exclusivity:</strong> Kidepo's remoteness ensures fewer than 50 visitors per day on average,
+                    making every season feel private and intimate.</li>
+            </ul>
+        </div>
+
+        <!-- Getting There -->
+        <div class="upper-content">
+            <h3 class="section-title">How to Get to Kidepo Valley National Park</h3>
+            <ul class="un-styled-list">
+                <li><strong>By Road:</strong> Approx. 10–12 hours from Kampala via the scenic northern route (Kampala → Karuma → Gulu →
+                    Kitgum → Kidepo). Recommended to break journey with overnight stops in Gulu or Kitgum. 4x4 vehicle essential,
+                    especially in rainy season.</li>
+                <li><strong>By Air:</strong> Daily scheduled and chartered flights from Entebbe International Airport (EBB) or Kajjansi
+                    Airfield to Kidepo Airstrip (approx. 2 hours). Terrain Safaris arranges seamless airport transfers and meet and greet
+                    services.</li>
+            </ul>
+            <p class="mt-3"><strong>Terrain Safaris</strong> will arrange all transfers, park entry permits, experienced guide services,
+                and logistics for you—so you focus entirely on the adventure.</p>
+        </div>
+
+        <!-- Ideal For Section -->
+        <div class="upper-content">
+            <h3 class="section-title">Ideal For</h3>
+            <ul class="un-styled-list">
+                <li>Adventurers seeking <strong>off the beaten track safaris</strong> in Africa with minimal tourist infrastructure</li>
+                <li><strong>Wildlife photographers and documentary crews</strong> requiring exclusive access and dramatic landscapes</li>
+                <li>Clients looking for <strong>uncrowded safari destinations</strong> in Uganda with high wildlife density</li>
+                <li><strong>Cultural travelers</strong> interested in authentic indigenous experiences with the Karamojong and
+                    IK communities</li>
+                <li><strong>High end explorers</strong> wanting a luxury remote wilderness experience with private guides and bespoke
+                    itineraries</li>
+                <li><strong>Birding enthusiasts</strong> targeting Uganda's rarest species including the Karamoja apalis and
+                    Clapperton's spurfowl</li>
+            </ul>
+        </div>
+
+        <!-- Map Section -->
+        <div class="upper-content">
+            <h3 class="section-title">Location & Access Map</h3>
+            <div class="map-box">
+                <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127928.82569214284!2d33.79093549110158!3d3.8720440129407237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x176bd7a285f80f11%3A0x4d6638bb2c6f54a4!2sKidepo%20Valley%20National%20Park!5e0!3m2!1sen!2sug!4v1698484897394!5m2!1sen!2sug"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Kidepo Valley National Park Location Map">
+                </iframe>
+            </div>
+            <p class="text-center text-muted mt-3 small">
+                <i class="fa fa-map-marker-alt mr-1"></i> Kidepo Valley National Park is located in Uganda's Karamoja region, bordering
+                South Sudan and Kenya. Terrain Safaris provides detailed pre-trip briefings and GPS coordinates for seamless navigation.
+            </p>
+        </div>
+
+        <!-- CTA Section with Special Button -->
+        <div class="text-center mt-5 py-4" style="background: linear-gradient(135deg, #2d5016 0%, var(--bwindi-green) 100%); border-radius: 12px; color: white;">
+            <h3 class="mb-3" style="color: white;">Ready for Uganda's Ultimate Wilderness Adventure?</h3>
+            <p class="lead mb-4" style="max-width: 700px; margin: 0 auto; opacity: 0.95;">Join our small-group safaris or design a private
+                itinerary to Kidepo Valley National Park with expert guides, luxury accommodations, and 24/7 support.</p>
+            <a href="contact.html" class="btn btn-primary py-3 px-5 btn-plan-trip">
+                Plan a Trip in Kidepo <i class="fa fa-arrow-right ml-2"></i>
+            </a>
+            <p class="mt-3 small" style="opacity: 0.9;">
+                <i class="fa fa-check-circle mr-1"></i> Free itinerary consultation &nbsp;|&nbsp;
+                <i class="fa fa-check-circle mr-1"></i> Flexible booking &nbsp;|&nbsp;
+                <i class="fa fa-check-circle mr-1"></i> Carbon-offset trips
+            </p>
+        </div>
+
+        <!-- FAQs Section -->
+        <div class="upper-content">
+            <h3 class="section-title">Frequently Asked Questions</h3>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    1. Are there guided safari tours available in Kidepo Valley National Park?
+                    <span class="arrow"><i class="fa fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, Terrain Safaris offers expertly guided safari tours in Kidepo Valley National Park, including morning and
+                        evening game drives, walking safaris with armed rangers, and specialized birding tours. All guides are Uganda
+                        Wildlife Authority-certified with extensive knowledge of the park's ecosystems and wildlife behavior.
+                        Private guides can be arranged for personalized itineraries.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    2. Are there any cultural experiences available near Kidepo Valley National Park?
+                    <span class="arrow"><i class="fa fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, visitors can engage in meaningful cultural experiences with the Karamojong people, including visits to
+                        traditional manyattas (homesteads), learning about cattle-herding traditions, participating in adumu (jumping dances),
+                        and purchasing authentic beadwork. For the more adventurous, guided treks to IK community settlements on
+                        Mount Morungole offer rare insights into one of Africa's smallest indigenous groups. All cultural visits
+                        are conducted respectfully with community consent and fair compensation.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    3. Can I see unique wildlife species in Kidepo Valley National Park?
+                    <span class="arrow"><i class="fa fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, Kidepo is renowned for its unique wildlife assemblage not found in other Ugandan parks. Highlights
+                        include cheetahs (rare elsewhere in Uganda), ostriches, greater and lesser kudus, Bright's gazelle,
+                        aardwolves, and the elusive African wild dog. The park is also home to over 80 mammal species and 470+
+                        bird species. Our expert guides know prime sighting locations and animal behaviors to maximize your
+                        wildlife encounters.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    4. What should I pack for a visit to Kidepo Valley National Park?
+                    <span class="arrow"><i class="fa fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Essential items include: lightweight, breathable clothing in neutral colors (khaki, beige, olive); a wide brimmed
+                        hat and high-SPF sunscreen; insect repellent with DEET; binoculars (10x42 recommended); a quality camera with
+                        zoom lens; sturdy walking shoes for nature walks; a reusable water bottle; and a light jacket for
+                        cool mornings/evenings. Terrain Safaris provides a detailed pre-departure packing list tailored to your
+                        itinerary and season.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    5. Is it safe to visit Kidepo Valley National Park?
+                    <span class="arrow"><i class="fa fa-plus"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, Kidepo Valley National Park is generally very safe for tourists when traveling with a reputable
+                        operator like Terrain Safaris. The park has a strong security presence, and our ground partners maintain
+                        close coordination with Uganda Wildlife Authority rangers. We provide comprehensive pre-trip safety briefings,
+                        experienced armed guides for walking activities, and 24/7 emergency support. The Karamoja region has seen
+                        significant stability improvements, and tourism is actively encouraged by local communities.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- Kidepo Content End -->
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+    <div class="row pt-5">
+        <div class="col-lg-3 col-md-6 mb-5">
+            <a href="index.html" class="navbar-brand">
+                <h1 class="text-primary"><span class="text-white">TERRAIN</span>safaris</h1>
+            </a>
+            <p>Terrain Safaris is a leading safari and adventure travel company incorporated in 2014 under the Articles of Uganda.</p>
+            <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
+            <div class="d-flex justify-content-start">
+                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Quick Links</h5>
+            <div class="d-flex flex-column justify-content-start">
+                <a class="text-white-50" href="index.html"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                <a class="text-white-50 mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>About us</a>
+                <a class="text-white-50 mb-2" href="mgahinga-park.html"><i class="fa fa-angle-right mr-2"></i>Mgahinga</a>
+                <a class="text-white-50 mb-2" href="package.html"><i class="fa fa-angle-right mr-2"></i>Packages</a>
+                <a class="text-white-50" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contact us</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">National Parks</h5>
+            <div class="d-flex flex-column justify-content-start">
+                <a class="text-white-50 mb-2" href="bwindi.html"><i class="fa fa-angle-right mr-2"></i>Bwindi</a>
+                <a class="text-white-50 mb-2" href="queen-elizabeth-park.html"><i class="fa fa-angle-right mr-2"></i>Queen Elizabeth</a>
+                <a class="text-white-50 mb-2" href="murchison-falls-park.html"><i class="fa fa-angle-right mr-2"></i>Murchison Falls</a>
+                <a class="text-white-50 mb-2" href="mgahinga-park.html"><i class="fa fa-angle-right mr-2"></i>Mgahinga</a>
+                <a class="text-white-50 mb-2" href="kidepo-valley-park.html"><i class="fa fa-angle-right mr-2"></i>Kidepo Valley</a>
+                <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Lake Mburo</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
+            <p><i class="fa fa-map-marker-alt mr-2"></i>Freedom City Mall, Entebbe Rd.</p>
+            <p><i class="fa fa-phone-alt mr-2"></i>+256 704625961</p>
+            <p><i class="fa fa-envelope mr-2"></i>terrainsafarisltd@gmail.com</p>
+            <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Newsletter</h6>
+            <div class="w-100">
+                <form action="newsletter_sub.php" method="post">
+                    <div class="input-group">
+                        <input type="email" id="email" name="email" class="form-control border-light" style="padding: 25px;" placeholder="Your Email" required>
+                        <div class="input-group-append">
+                            <button class="btn btn-primary px-3" type="submit" style="background: rgb(6, 150, 131); border-color: rgb(6, 150, 131);">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+    <div class="row">
+        <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+            <p class="m-0 text-white-50">Copyright &copy; <a href="index.html" class="text-white">Terrain-safaris</a>. All Rights Reserved.</p>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top">
+    <i class="fa fa-angle-double-up"></i>
+</a>
+
+<!-- JavaScript for FAQ Toggle -->
+<script>
+    document.querySelectorAll('.faq-question').forEach(item => {
+        item.addEventListener('click', () => {
+            const faqItem = item.parentElement;
+            const answer = item.nextElementSibling;
+            const arrow = item.querySelector('.arrow i');
+
+            // Toggle active class
+            faqItem.classList.toggle('active');
+
+            // Toggle answer visibility
+            if (answer.style.display === 'block') {
+                answer.style.display = 'none';
+                arrow.classList.remove('fa-minus');
+                arrow.classList.add('fa-plus');
+            } else {
+                answer.style.display = 'block';
+                arrow.classList.remove('fa-plus');
+                arrow.classList.add('fa-minus');
+            }
+        });
+    });
+
+    // Smooth scroll for back-to-top button
+    document.querySelector('.back-to-top').addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/tempusdominus/js/moment.min.js"></script>
+<script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+<script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+</body>
+</html>

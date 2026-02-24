@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Terrain-Safaris | Blogs</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Tours & Travel" name="keywords">
+    <meta content="Explore Uganda's wild heart through our expertly curated safari blogs on gorilla trekking, birding, national parks, and cultural adventures." name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.jpg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* Blog-specific styling to match your design */
+        .blog-item {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .blog-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .blog-date {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            width: 60px;
+            height: 60px;
+            background: #e74c3c;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+        .read-more-link {
+            color: #e74c3c;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 10px;
+            display: inline-block;
+        }
+        .read-more-link:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== PRIMARY COLOR OVERRIDE: rgb(6,150,131) ===== */
+:root {
+    --terrain-primary: rgb(6, 150, 131) !important;
+}
+
+/* Text Primary Color - Blogs Page Specific */
+.text-primary,
+.text-primary:hover,
+.text-primary:focus,
+h1.text-primary,
+h2.text-primary,
+h3.text-primary,
+h4.text-primary,
+h5.text-primary,
+h6.text-primary,
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link,
+.dropdown-item.active,
+.dropdown-item:active,
+.dropdown-item:hover,
+.footer-section a:hover,
+.quick-links a:hover,
+.blog-item .text-primary,
+.blog-item a.text-primary,
+.blog-item a.text-primary:hover,
+.blog-item .d-flex .text-primary,
+.author-bio .text-primary,
+.page-header .breadcrumb-item a:hover,
+.breadcrumb-item + .breadcrumb-item::before,
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active,
+.read-more-link,
+.read-more-link:hover {
+    color: rgb(6, 150, 131) !important;
+}
+
+/* Button Primary Background & Border - Blogs Page */
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.disabled,
+.btn-primary:disabled,
+.back-to-top,
+.card-header.bg-primary,
+.navbar-light .navbar-toggler-icon,
+.input-group-append .btn-primary,
+.input-group-append .input-group-text.bg-primary,
+.blog-date,
+.pagination .page-item.active .page-link,
+.pagination .page-link:hover {
+    background-color: rgb(6, 150, 131) !important;
+    border-color: rgb(6, 150, 131) !important;
+    color: #ffffff !important;
+}
+
+/* Button Hover Effects - Blogs Page */
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.back-to-top:hover,
+.input-group-append .btn-primary:hover,
+.input-group-append .input-group-text.bg-primary:hover,
+.pagination .page-item.active .page-link:hover {
+    background-color: rgb(186, 222, 42) !important; /* Lime-green hover */
+    border-color: rgb(186, 222, 42) !important;
+    color: #0a1929 !important;
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+/* Outline Buttons - Blogs Page */
+.btn-outline-primary,
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+    color: rgb(6, 150, 131) !important;
+    border-color: rgb(6, 150, 131) !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+    background-color: rgb(6, 150, 131) !important;
+    color: #ffffff !important;
+}
+
+/* Border Primary - Blogs Page */
+.border-primary,
+.dropdown-menu,
+.form-control:focus,
+.custom-select:focus,
+.input-group-append .btn-primary,
+.card.border-primary,
+.blog-item:hover {
+    border-color: rgb(6, 150, 131) !important;
+}
+
+/* Blog Items - Blogs Page Specific */
+.blog-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.blog-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(6, 150, 131, 0.25) !important;
+}
+
+.blog-item img {
+    transition: transform 0.3s ease;
+    border-radius: 8px 8px 0 0;
+}
+
+.blog-item:hover img {
+    transform: scale(1.05);
+}
+
+.blog-item .bg-white.p-4 {
+    position: relative;
+}
+
+.blog-item .bg-white.p-4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgb(6, 150, 131), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.blog-item:hover .bg-white.p-4::after {
+    opacity: 1;
+}
+
+.blog-item a.h5.m-0 {
+    color: #2d5016 !important;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    display: block;
+    margin: 10px 0;
+}
+
+.blog-item a.h5.m-0:hover {
+    color: rgb(6, 150, 131) !important;
+}
+
+.blog-item .read-more-link,
+.blog-item a.h5.text-decoration-none:last-child {
+    color: rgb(6, 150, 131) !important;
+    font-weight: 600;
+    position: relative;
+    padding-right: 25px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.blog-item .read-more-link::after,
+.blog-item a.h5.text-decoration-none:last-child::after {
+    content: '→';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+    color: rgb(6, 150, 131) !important;
+}
+
+.blog-item .read-more-link:hover::after,
+.blog-item a.h5.text-decoration-none:last-child:hover::after {
+    transform: translateY(-50%) translateX(3px);
+}
+
+/* Blog Date Badge - Override existing red color */
+.blog-date {
+    background: rgb(6, 150, 131) !important;
+    color: #ffffff !important;
+}
+
+.blog-date h6,
+.blog-date small {
+    color: #ffffff !important;
+}
+
+/* Author Bio Section */
+.author-bio .text-primary,
+.author-bio h3.text-primary {
+    color: rgb(6, 150, 131) !important;
+}
+
+.author-bio .d-flex a.text-primary {
+    color: rgb(6, 150, 131) !important;
+    transition: transform 0.3s ease;
+}
+
+.author-bio .d-flex a.text-primary:hover {
+    color: rgb(186, 222, 42) !important;
+    transform: scale(1.2);
+}
+
+/* Search Form */
+.input-group-append .input-group-text.bg-primary {
+    background-color: rgb(6, 150, 131) !important;
+    border-color: rgb(6, 150, 131) !important;
+    color: #ffffff !important;
+}
+
+.input-group-append .input-group-text.bg-primary:hover {
+    background-color: rgb(186, 222, 42) !important;
+    border-color: rgb(186, 222, 42) !important;
+    color: #0a1929 !important;
+}
+
+/* Navbar Active States - Blogs Page */
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .show > .nav-link,
+.dropdown-item.active,
+.dropdown-item:active {
+    color: rgb(6, 150, 131) !important;
+    font-weight: 600;
+}
+
+/* Footer Links Hover - Blogs Page */
+footer a:hover,
+.footer-section a:hover,
+.quick-links a:hover,
+.social-links a:hover,
+.footer-brand:hover {
+    color: rgb(6, 150, 131) !important;
+    transform: translateX(3px);
+    transition: all 0.3s ease;
+}
+
+/* Form Elements - Blogs Page */
+.form-control:focus,
+.custom-select:focus,
+textarea.form-control:focus,
+.input-group:focus-within .form-control {
+    border-color: rgb(6, 150, 131) !important;
+    box-shadow: 0 0 0 0.2rem rgba(6, 150, 131, 0.25) !important;
+}
+
+/* Page Header Breadcrumb - Blogs Page */
+.page-header .text-white a {
+    color: #ffffff !important;
+    transition: color 0.3s ease;
+}
+
+.page-header .text-white a:hover {
+    color: rgb(186, 222, 42) !important;
+    text-decoration: none;
+}
+
+.page-header::before {
+    background: rgba(6, 150, 131, 0.85) !important;
+}
+
+/* Social Icons - Blogs Page */
+.btn-outline-primary.btn-square,
+.social-links a,
+.author-bio .d-flex a {
+    color: rgb(6, 150, 131) !important;
+    border-color: rgb(6, 150, 131) !important;
+}
+
+.btn-outline-primary.btn-square:hover,
+.social-links a:hover,
+.author-bio .d-flex a:hover {
+    background-color: rgb(6, 150, 131) !important;
+    color: #ffffff !important;
+    transform: scale(1.1);
+}
+
+/* Newsletter Form - Blogs Page Footer */
+.input-group-append .btn-primary {
+    background-color: rgb(6, 150, 131) !important;
+    border-color: rgb(6, 150, 131) !important;
+}
+
+.input-group-append .btn-primary:hover {
+    background-color: rgb(186, 222, 42) !important;
+    border-color: rgb(186, 222, 42) !important;
+    color: #0a1929 !important;
+}
+
+/* Section Titles - Blogs Page */
+.text-center .text-primary,
+.text-center h6.text-primary {
+    color: rgb(6, 150, 131) !important;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.text-center .text-primary::after,
+.text-center h6.text-primary::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: rgb(6, 150, 131) !important;
+}
+
+/* Blog Grid Layout Enhancements */
+.row .col-md-6 {
+    transition: transform 0.3s ease;
+}
+
+.row .col-md-6:hover {
+    transform: translateY(-3px);
+}
+
+/* Blog Card Hover Effects */
+.blog-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, rgb(6, 150, 131), rgb(186, 222, 42));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+
+.blog-item:hover::before {
+    transform: scaleX(1);
+}
+
+/* Category & Author Tag Styling */
+.blog-item .d-flex.mb-2 a.text-uppercase {
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+.blog-item .d-flex.mb-2 span.px-2 {
+    color: rgba(6, 150, 131, 0.5) !important;
+}
+
+/* Pagination Styling */
+.pagination .page-link {
+    color: rgb(6, 150, 131) !important;
+    border-color: rgb(6, 150, 131) !important;
+}
+
+.pagination .page-item.disabled .page-link {
+    color: #6c757d !important;
+    border-color: #dee2e6 !important;
+}
+
+/* Responsive Adjustments - Blogs Page */
+@media (max-width: 992px) {
+    .navbar-light .navbar-nav .nav-link {
+        color: rgb(6, 150, 131) !important;
+    }
+
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: rgb(186, 222, 42) !important;
+    }
+
+    .blog-item {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn-primary,
+    .btn-lg {
+        width: 100%;
+        padding: 0.75rem;
+    }
+
+    .text-center h1 {
+        font-size: 1.8rem !important;
+    }
+
+    .blog-item .bg-white.p-4 {
+        padding: 1.5rem !important;
+    }
+
+    .author-bio {
+        margin-top: 2rem;
+    }
+}
+
+/* Print Styles - Blogs Page */
+@media print {
+    .btn-primary,
+    .btn-outline-primary {
+        border: 2px solid rgb(6, 150, 131) !important;
+        color: rgb(6, 150, 131) !important;
+        background: none !important;
+    }
+
+    .blog-item {
+        border: 1px solid rgb(6, 150, 131) !important;
+        box-shadow: none !important;
+    }
+
+    .blog-date {
+        background: rgba(6, 150, 131, 0.1) !important;
+        color: rgb(6, 150, 131) !important;
+    }
+}
+
+/* Dark Mode Support (if implemented later) - Blogs Page */
+@media (prefers-color-scheme: dark) {
+    .text-primary {
+        color: rgb(26, 180, 161) !important; /* Lighter teal for dark mode */
+    }
+
+    .btn-primary,
+    .back-to-top {
+        background-color: rgb(26, 180, 161) !important;
+        border-color: rgb(26, 180, 161) !important;
+    }
+
+    .blog-item {
+        background: #1a1a2e !important;
+        color: #ffffff !important;
+    }
+
+    .blog-item a.h5.m-0 {
+        color: #ffffff !important;
+    }
+
+    .blog-item a.h5.m-0:hover {
+        color: rgb(26, 180, 161) !important;
+    }
+
+    .bg-white {
+        background: #1a1a2e !important;
+        color: #ffffff !important;
+    }
+}
+
+/* Animation Enhancements - Blogs Page */
+@keyframes pulse-primary {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(6, 150, 131, 0.4); }
+    50% { box-shadow: 0 0 0 10px rgba(6, 150, 131, 0); }
+}
+
+.btn-primary:hover,
+.back-to-top:hover,
+.blog-item:hover .read-more-link {
+    animation: pulse-primary 1.5s infinite;
+}
+
+/* Smooth Scroll for Anchor Links - Blogs Page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Focus Visible for Accessibility - Blogs Page */
+.btn-primary:focus-visible,
+.btn-outline-primary:focus-visible,
+.form-control:focus-visible,
+a:focus-visible,
+.blog-item:focus-visible {
+    outline: 3px solid rgb(186, 222, 42) !important;
+    outline-offset: 2px;
+}
+
+/* Blog Image Overlay Effect */
+.blog-item img {
+    position: relative;
+}
+
+.blog-item img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(6, 150, 131, 0.3), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.blog-item:hover img::after {
+    opacity: 1;
+}
+
+/* Blog Excerpt Styling */
+.blog-item p.mt-2 {
+    color: #555 !important;
+    line-height: 1.6;
+    margin-bottom: 15px !important;
+}
+
+/* Blog Category Hover Effect */
+.blog-item .d-flex.mb-2 a.text-uppercase:hover {
+    color: rgb(186, 222, 42) !important;
+}
+
+/* Blog Card Loading Animation */
+.blog-item {
+    animation: fadeInUp 0.5s ease forwards;
+    opacity: 0;
+}
+
+.blog-item:nth-child(1) { animation-delay: 0.1s; }
+.blog-item:nth-child(2) { animation-delay: 0.2s; }
+.blog-item:nth-child(3) { animation-delay: 0.3s; }
+.blog-item:nth-child(4) { animation-delay: 0.4s; }
+.blog-item:nth-child(5) { animation-delay: 0.5s; }
+.blog-item:nth-child(6) { animation-delay: 0.6s; }
+.blog-item:nth-child(7) { animation-delay: 0.7s; }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Sidebar Author Bio Card */
+.author-bio {
+    border: 2px solid rgba(6, 150, 131, 0.2);
+    border-radius: 8px;
+}
+
+.author-bio:hover {
+    border-color: rgb(6, 150, 131) !important;
+    box-shadow: 0 10px 30px rgba(6, 150, 131, 0.15);
+    transition: all 0.3s ease;
+}
+
+/* Search Input Focus */
+.input-group .form-control:focus {
+    border-color: rgb(6, 150, 131) !important;
+    box-shadow: 0 0 0 0.2rem rgba(6, 150, 131, 0.25) !important;
+}
+    </style>
+</head>
+
+<body>
+<!-- Topbar Start -->
+<div class="container-fluid bg-light pt-3 d-none d-lg-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <p><i class="fa fa-envelope mr-2"></i>terrainsafarisltd@gmail.com</p>
+                    <p class="text-body px-3">|</p>
+                    <p><i class="fa fa-phone-alt mr-2"></i>+256 772625961</p>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-primary px-3" href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-primary px-3" href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-primary px-3" href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-primary px-3" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-primary pl-3" href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Topbar End -->
+
+<!-- Navbar Start -->
+<div class="container-fluid position-relative nav-bar p-0">
+    <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+            <a href="index.html" class="navbar-brand">
+                <h1 class="m-0 text-primary"><span class="text-dark">TERRAIN</span>safaris</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                <div class="navbar-nav ml-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="destination.html" class="nav-item nav-link">Destinations</a>
+                    <a href="package.html" class="nav-item nav-link">Safari Packages</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Services</a>
+                        <div class="dropdown-menu border-0 rounded-0 m-0">
+                            <a href="blog.html" class="dropdown-item active">Blog Grid</a>
+                            <a href="car-hire.html" class="dropdown-item">Car-Hire Services</a>
+                            <a href="gallery.html" class="dropdown-item">Gallery</a>
+                            <a href="bird-watching.html" class="dropdown-item">Bird Watching</a>
+                            <a href="gorilla-trekking.html" class="dropdown-item">Gorilla Trekking</a>
+                            <a href="communities.html" class="dropdown-item">Communities</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Navbar End -->
+
+<!-- Header Start -->
+<div class="container-fluid page-header" style="background: url('img/ter-Kibale-destinations-pic-1.jpg') center center no-repeat; background-size: cover;">
+    <div class="container">
+        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
+            <h3 class="display-4 text-white text-uppercase">Our Blogs</h3>
+            <div class="d-inline-flex text-white">
+                <p class="m-0 text-uppercase"><a class="text-white" href="index.html">Home</a></p>
+                <i class="fa fa-angle-double-right pt-1 px-3"></i>
+                <p class="m-0 text-uppercase">Blogs</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Header End -->
+
+<!-- Blog Start -->
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="row pb-3">
+                    <!-- Blog 1 -->
+                    <div class="col-md-6 mb-4 pb-2">
+                        <div class="blog-item">
+                            <div class="position-relative">
+                                <img class="img-fluid w-100" src="img/ter-rwanda-gorilla-1.jpg" alt="Gorilla Trekking in Bwindi">
+                               <!-- <div class="blog-date">
+                                    <h6 class="font-weight-bold mb-n1">15</h6>
+                                    <small class="text-white text-uppercase">Mar</small>
+                                </div>-->
+                            </div>
+                            <div class="bg-white p-4">
+                                <div class="d-flex mb-2">
+                                    <a class="text-primary text-uppercase text-decoration-none" href="">Terrain Team</a>
+                                    <span class="text-primary px-2">|</span>
+                                    <a class="text-primary text-uppercase text-decoration-none" href="">Gorilla Trekking</a>
+                                </div>
+                                <a class="h5 m-0 text-decoration-none" href="bird-watching.html">Your Ultimate Guide to Gorilla Trekking in Bwindi</a>
+                                <p class="mt-2">Everything you need to know before meeting the gentle giants of Uganda’s misty forests.</p>
+                                <a class="h5 text-decoration-none" href="3-days-itineary.html">Read More -></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog 2 -->
+                    <div class="col-md-6 mb-4 pb-2">
+                        <div class="blog-item">
+                            <div class="position-relative">
+                                <img class="img-fluid w-100" src="img/ter-kidepo-cheaters-1.jpg" alt="Kidepo Valley National Park">
+                                <!--<div class="blog-date">
+                                    <h6 class="font-weight-bold mb-n1">22</h6>
+                                    <small class="text-white text-uppercase">Feb</small>
+                                </div>-->
+                            </div>
+                            <div class="bg-white p-4">
+                                <div class="d-flex mb-2">
+                                    <a class="text-primary text-uppercase text-decoration-none" href="">Terrain Team</a>
+                                    <span class="text-primary px-2">|</span>
+                                    <a class="text-primary text-uppercase text-decoration-none" href="">National Parks</a>
+                                </div>
+                                <a class="h5 m-0 text-decoration-none" href="bird-watching.html">Why Kidepo Valley is Uganda’s Best-Kept Secret</a>
+                                <p class="mt-2">Remote, rugged, and teeming with wildlife discover Africa’s untouched Eden.</p>
+                                <a class="h5 text-decoration-none" href="3-days-itineary.html">Read More -></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog 3 -->
+                    <div class="col-md-6 mb-4 pb-2">
+                        <div class="blog-item">
+                            <div class="position-relative">
+                                <img class="img-fluid w-100" src="img/ter-shoebill-2.jpg" alt="Bird Watching in Uganda">
+
+                            </div>
+                            <div class="bg-white p-4">
+                                <div class="d-flex mb-2">
+                                    <a class="text-primary text-uppercase text-decoration-none" href="">Terrain Team</a>
+                                    <span class="text-primary px-2">|</span>
+                                    <a class="text-primary text-uppercase text-decoration-none" href="">Bird Watching</a>
+                                </div>
+                                <a class="h5 m-0 text-decoration-none" href="bird-watching.html">Top 10 Birding Hotspots in the Pearl of Africa</a>
+                                <p class="mt-2">From Shoebills to Great Blue Turacos Uganda is a paradise for bird lovers.</p>
+                                <a class="h5 text-decoration-none" href="3-days-itineary.html">Read More -></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog 4 -->
+                    <div class="col-md-6 mb-4 pb-2">
+                        <div class="blog-item">
+                            <div class="position-relative">
+                                <img class="img-fluid w-100" src="img/ter-murchison-boat-1.jpg" alt="Murchison Falls Safari">
+                                <!--<div class="blog-date">
+                                    <h6 class="font-weight-bold mb-n1">05</h6>
+                                    <small class="text-white text-uppercase">Jan</small>
+                                </div>-->
+                            </div>
+                            <div class="bg-white p-4">
+                                <div class="d-flex mb-2">
+                                    <a class="text-primary text-uppercase text-decoration-none" href="">Terrain Team</a>
+                                    <span class="text-primary px-2">|</span>
+                                    <a class="text-primary text-uppercase text-decoration-none" href="">Safari Tips</a>
+                                </div>
+                                <a class="h5 m-0 text-decoration-none" href="bird-watching.html">The Complete Murchison Falls Safari Experience</a>
+                                <p class="mt-2">Boat cruises, game drives, and the thunderous power of the Nile’s mightiest waterfall.</p>
+                                <a class="h5 text-decoration-none" href="3-days-itineary.html">Read More -></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog 5 -->
+                    <div class="col-md-6 mb-4 pb-2">
+                        <div class="blog-item">
+                            <div class="position-relative">
+                                <img class="img-fluid w-100" src="img/ter-south-sudan-1.jpg" alt="Cultural Tourism Uganda">
+
+                            </div>
+                            <div class="bg-white p-4">
+                                <div class="d-flex mb-2">
+                                    <a class="text-primary text-uppercase text-decoration-none" href="">Terrain Team</a>
+                                    <span class="text-primary px-2">|</span>
+                                    <a class="text-primary text-uppercase text-decoration-none" href="">Cultural Tours</a>
+                                </div>
+                                <a class="h5 m-0 text-decoration-none" href="bird-watching.html">Connecting with Communities: Authentic Cultural Experiences</a>
+                                <p class="mt-2">Meet local artisans, learn traditional dances, and support sustainable tourism.</p>
+                                <a class="h5 text-decoration-none" href="3-days-itineary.html">Read More -></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog 6 -->
+                    <div class="col-md-6 mb-4 pb-2">
+                        <div class="blog-item">
+                            <div class="position-relative">
+                                <img class="img-fluid w-100" src="img/ter-Kibale-chimpanzees-2.jpg" alt="Chimpanzee Tracking Kibale">
+
+                            </div>
+                            <div class="bg-white p-4">
+                                <div class="d-flex mb-2">
+                                    <a class="text-primary text-uppercase text-decoration-none" href="">Terrain Team</a>
+                                    <span class="text-primary px-2">|</span>
+                                    <a class="text-primary text-uppercase text-decoration-none" href="">Primate Safaris</a>
+                                </div>
+                                <a class="h5 m-0 text-decoration-none" href="bird-watching.html">Chimpanzee Tracking in Kibale Forest: What to Expect</a>
+                                <p class="mt-2">Walk among our closest relatives in the “Primate Capital of the World.”</p>
+                                <a class="h5 text-decoration-none" href="3-days-itineary.html">Read More -></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog 7 -->
+                    <div class="col-md-6 mb-4 pb-2">
+                        <div class="blog-item">
+                            <div class="position-relative">
+                                <img class="img-fluid w-100" src="img/ter-Half-Day-Fishing-trip-on-Lake-Victoria.jpg" alt="Lake Victoria Beaches">
+
+                            </div>
+                            <div class="bg-white p-4">
+                                <div class="d-flex mb-2">
+                                    <a class="text-primary text-uppercase text-decoration-none" href="">Terrain Team</a>
+                                    <span class="text-primary px-2">|</span>
+                                    <a class="text-primary text-uppercase text-decoration-none" href="">Beach Getaways</a>
+                                </div>
+                                <a class="h5 m-0 text-decoration-none" href="bird-watching.html">Relaxing on the Shores of Lake Victoria</a>
+                                <p class="mt-2">After your safari, unwind on Uganda’s serene beaches with boat cruises and sunset views.</p>
+                                <a class="h5 text-decoration-none" href="3-days-itineary.html">Read More -></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--<div class="col-12">
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination pagination-lg justify-content-center bg-white mb-0" style="padding: 30px;">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>-->
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-5 mt-lg-0">
+                <!-- Author Bio -->
+                <div class="d-flex flex-column text-center bg-white mb-5 py-5 px-4">
+                    <img src="img/ter-Terrain-Safaris-Logo-1.jpg" class="img-fluid mx-auto mb-3" style="width: 100px;">
+                    <h3 class="text-primary mb-3">Terrain Safaris Team</h3>
+                    <p>We share insights from over a decade of guiding unforgettable adventures across Uganda and East Africa.</p>
+                    <div class="d-flex justify-content-center">
+                        <a class="text-primary px-2" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="text-primary px-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="text-primary px-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="text-primary px-2" href=""><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Search Form -->
+                <div class="mb-5">
+                    <div class="bg-white" style="padding: 30px;">
+                        <div class="input-group">
+                            <input type="text" class="form-control p-4" placeholder="Search blogs...">
+                            <div class="input-group-append">
+                                <span class="input-group-text bg-primary border-primary text-white"><i class="fa fa-search"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Blog End -->
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+    <div class="row pt-5">
+        <div class="col-lg-3 col-md-6 mb-5">
+            <a href="index.html" class="navbar-brand">
+                <h1 class="text-primary"><span class="text-white">TERRAIN</span>safaris</h1>
+            </a>
+            <p>Terrain Safaris is a leading safari and adventure travel company incorporated in 2014 under the Articles of Uganda.</p>
+            <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
+            <div class="d-flex justify-content-start">
+                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Quick Links</h5>
+            <div class="d-flex flex-column justify-content-start">
+                <a class="text-white-50" href="index.html"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                <a class="text-white-50 mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>About us</a>
+                <a class="text-white-50 mb-2" href="destination.html"><i class="fa fa-angle-right mr-2"></i>Destination</a>
+                <a class="text-white-50 mb-2" href="package.html"><i class="fa fa-angle-right mr-2"></i>Packages</a>
+                <a class="text-white-50 mb-2" href="blog.html"><i class="fa fa-angle-right mr-2"></i>Blogs</a>
+                <a class="text-white-50" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contact us</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">National Parks</h5>
+            <div class="d-flex flex-column justify-content-start">
+                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Bwindi</a>
+                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Queen Elizabeth</a>
+                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Murchison Falls</a>
+                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Lake Mburo</a>
+                <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Kidepo Valley</a>
+                <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Mgahinga</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
+            <p><i class="fa fa-map-marker-alt mr-2"></i>Najjanankumbi Kampala-Entebbe rd.</p>
+            <p><i class="fa fa-phone-alt mr-2"></i>+256 704625961</p>
+            <p><i class="fa fa-envelope mr-2"></i>terrainsafarisltd@gmail.com</p>
+            <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Newsletter</h6>
+            <div class="w-100">
+                <form action="newsletter_sub.php" method="post">
+                    <div class="input-group">
+                        <input type="email" id="email" name="email" class="form-control border-light" style="padding: 25px;" placeholder="Your Email" required>
+                        <div class="input-group-append">
+                            <button class="btn btn-primary px-3" type="submit">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+    <div class="row">
+        <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+            <p class="m-0 text-white-50">Copyright &copy; <a href="index.html">Terrain-safaris</a>. All Rights Reserved.</p>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/tempusdominus/js/moment.min.js"></script>
+<script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+<script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+</body>
+
+</html>
